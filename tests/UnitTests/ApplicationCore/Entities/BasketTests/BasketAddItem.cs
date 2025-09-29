@@ -61,7 +61,7 @@ public class BasketAddItem
     {
         var basket = new Basket(_buyerId);
 
-        Assert.Throws<ArgumentOutOfRangeException>(() => basket.AddItem(_testCatalogItemId, _testUnitPrice, +100));
+        Assert.Throws<ArgumentOutOfRangeException>(() => basket.AddItem(_testCatalogItemId, _testUnitPrice, -1));
     }
 
     [Fact]
