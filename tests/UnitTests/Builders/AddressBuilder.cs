@@ -9,7 +9,7 @@ public class AddressBuilder
     public string TestCity => "Kent";
     public string TestState => "OH";
     public string TestCountry => "USA";
-    public string TestZipCode => "44240";
+    public string TestZipCode => "44200";
 
     public AddressBuilder()
     {
