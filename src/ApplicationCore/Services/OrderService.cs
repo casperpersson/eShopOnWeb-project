@@ -1,11 +1,12 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 using Ardalis.GuardClauses;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
 using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
 using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
 using Microsoft.eShopWeb.ApplicationCore.Interfaces;
 using Microsoft.eShopWeb.ApplicationCore.Specifications;
+using Microsoft.eShopWeb.ApplicationCore.HttpClients;
 
 namespace Microsoft.eShopWeb.ApplicationCore.Services;
 
@@ -14,17 +15,17 @@ public class OrderService : IOrderService
     private readonly IRepository<Order> _orderRepository;
     private readonly IUriComposer _uriComposer;
     private readonly IRepository<Basket> _basketRepository;
-    private readonly IRepository<CatalogItem> _itemRepository;
+    private readonly CatalogServiceClient _catalogServiceClient;
 
     public OrderService(IRepository<Basket> basketRepository,
-        IRepository<CatalogItem> itemRepository,
+        CatalogServiceClient catalogServiceClient,
         IRepository<Order> orderRepository,
         IUriComposer uriComposer)
     {
         _orderRepository = orderRepository;
         _uriComposer = uriComposer;
         _basketRepository = basketRepository;
-        _itemRepository = itemRepository;
+        _catalogServiceClient = catalogServiceClient;
     }
 
     public async Task CreateOrderAsync(int basketId, Address shippingAddress)
@@ -35,13 +36,23 @@ public class OrderService : IOrderService
         Guard.Against.Null(basket, nameof(basket));
         Guard.Against.EmptyBasketOnCheckout(basket.Items);
 
-        var catalogItemsSpecification = new CatalogItemsSpecification(basket.Items.Select(item => item.CatalogItemId).ToArray());
-        var catalogItems = await _itemRepository.ListAsync(catalogItemsSpecification);
+        // Get catalog items from microservice instead of repository
+        var catalogItemIds = basket.Items.Select(item => item.CatalogItemId).Distinct().ToList();
+        var catalogItems = new List<CatalogItemDto>();
+
+        foreach (var itemId in catalogItemIds)
+        {
+            var catalogItemDto = await _catalogServiceClient.GetCatalogItemByIdAsync(itemId);
+            if (catalogItemDto != null)
+            {
+                catalogItems.Add(catalogItemDto);
+            }
+        }
 
         var items = basket.Items.Select(basketItem =>
         {
-            var catalogItem = catalogItems.First(c => c.Id == basketItem.CatalogItemId);
-            var itemOrdered = new CatalogItemOrdered(catalogItem.Id, catalogItem.Name, _uriComposer.ComposePicUri(catalogItem.PictureUri));
+            var catalogItemDto = catalogItems.First(c => c.Id == basketItem.CatalogItemId);
+            var itemOrdered = new CatalogItemOrdered(catalogItemDto.Id, catalogItemDto.Name, _uriComposer.ComposePicUri(catalogItemDto.PictureUri));
             var orderItem = new OrderItem(itemOrdered, basketItem.UnitPrice, basketItem.Quantity);
             return orderItem;
         }).ToList();

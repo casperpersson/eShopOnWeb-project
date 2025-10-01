@@ -1,6 +1,5 @@
 ﻿using Ardalis.GuardClauses;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
+using Microsoft.eShopWeb.ApplicationCore.HttpClients;
 using Microsoft.eShopWeb.Web.Interfaces;
 using Microsoft.eShopWeb.Web.ViewModels;
 
@@ -8,21 +7,26 @@ namespace Microsoft.eShopWeb.Web.Services;
 
 public class CatalogItemViewModelService : ICatalogItemViewModelService
 {
-    private readonly IRepository<CatalogItem> _catalogItemRepository;
+    private readonly CatalogServiceClient _catalogServiceClient;
 
-    public CatalogItemViewModelService(IRepository<CatalogItem> catalogItemRepository)
+    public CatalogItemViewModelService(CatalogServiceClient catalogServiceClient)
     {
-        _catalogItemRepository = catalogItemRepository;
+        _catalogServiceClient = catalogServiceClient;
     }
 
     public async Task UpdateCatalogItem(CatalogItemViewModel viewModel)
     {
-        var existingCatalogItem = await _catalogItemRepository.GetByIdAsync(viewModel.Id);
+        Guard.Against.Null(viewModel, nameof(viewModel));
+        Guard.Against.NullOrEmpty(viewModel.Name, nameof(viewModel.Name));
 
+        // Get the existing catalog item from microservice
+        var existingCatalogItem = await _catalogServiceClient.GetCatalogItemByIdAsync(viewModel.Id);
         Guard.Against.Null(existingCatalogItem, nameof(existingCatalogItem));
 
-        CatalogItem.CatalogItemDetails details = new(viewModel.Name, existingCatalogItem.Description, viewModel.Price);
-        existingCatalogItem.UpdateDetails(details);
-        await _catalogItemRepository.UpdateAsync(existingCatalogItem);
+
+        throw new NotImplementedException(
+            "UpdateCatalogItem requires implementing an update endpoint in the ProductCatalogMS microservice. " +
+            "Add a PUT endpoint in CatalogItemController to handle updates.");
     }
 }
+

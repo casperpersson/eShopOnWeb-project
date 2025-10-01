@@ -6,18 +6,14 @@ using Microsoft.Extensions.Logging;
 
 namespace Microsoft.eShopWeb.Web.Services;
 
-/// <summary>
-/// This is a UI-specific service so belongs in UI project. It does not contain any business logic and works
-/// with UI-specific types (view models and SelectListItem types).
-/// </summary>
-public class CatalogViewModelService : ICatalogViewModelService
+public class MicroserviceCatalogViewModelService : ICatalogViewModelService
 {
-    private readonly ILogger<CatalogViewModelService> _logger;
+    private readonly ILogger<MicroserviceCatalogViewModelService> _logger;
     private readonly CatalogServiceClient _catalogServiceClient;
     private readonly IUriComposer _uriComposer;
 
-    public CatalogViewModelService(
-        ILogger<CatalogViewModelService> logger,
+    public MicroserviceCatalogViewModelService(
+        ILogger<MicroserviceCatalogViewModelService> logger,
         CatalogServiceClient catalogServiceClient,
         IUriComposer uriComposer)
     {

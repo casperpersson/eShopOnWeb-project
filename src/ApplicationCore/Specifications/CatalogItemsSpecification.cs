@@ -2,6 +2,7 @@
 using System.Linq;
 using Ardalis.Specification;
 using Microsoft.eShopWeb.ApplicationCore.Entities;
+using ProductCatalogMS.Entities;
 
 namespace Microsoft.eShopWeb.ApplicationCore.Specifications;
 

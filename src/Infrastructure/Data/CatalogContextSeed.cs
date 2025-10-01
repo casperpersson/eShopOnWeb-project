@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.eShopWeb.ApplicationCore.Entities;
 using Microsoft.Extensions.Logging;
+using ProductCatalogMS.Entities;
 
 namespace Microsoft.eShopWeb.Infrastructure.Data;
 

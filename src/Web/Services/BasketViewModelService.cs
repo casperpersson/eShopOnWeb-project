@@ -1,8 +1,9 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+﻿using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
 using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Specifications;
+using Microsoft.eShopWeb.ApplicationCore.HttpClients;
 using Microsoft.eShopWeb.Web.Interfaces;
+using Microsoft.eShopWeb.Web.ViewModels;
+using Microsoft.eShopWeb.ApplicationCore.Specifications;
 using Microsoft.eShopWeb.Web.Pages.Basket;
 
 namespace Microsoft.eShopWeb.Web.Services;
@@ -12,17 +13,17 @@ public class BasketViewModelService : IBasketViewModelService
     private readonly IRepository<Basket> _basketRepository;
     private readonly IUriComposer _uriComposer;
     private readonly IBasketQueryService _basketQueryService;
-    private readonly IRepository<CatalogItem> _itemRepository;
+    private readonly CatalogServiceClient _catalogServiceClient;
 
     public BasketViewModelService(IRepository<Basket> basketRepository,
-        IRepository<CatalogItem> itemRepository,
+        CatalogServiceClient catalogServiceClient,
         IUriComposer uriComposer,
         IBasketQueryService basketQueryService)
     {
         _basketRepository = basketRepository;
         _uriComposer = uriComposer;
         _basketQueryService = basketQueryService;
-        _itemRepository = itemRepository;
+        _catalogServiceClient = catalogServiceClient;
     }
 
     public async Task<BasketViewModel> GetOrCreateBasketForUser(string userName)
@@ -52,8 +53,18 @@ public class BasketViewModelService : IBasketViewModelService
 
     private async Task<List<BasketItemViewModel>> GetBasketItems(IReadOnlyCollection<BasketItem> basketItems)
     {
-        var catalogItemsSpecification = new CatalogItemsSpecification(basketItems.Select(b => b.CatalogItemId).ToArray());
-        var catalogItems = await _itemRepository.ListAsync(catalogItemsSpecification);
+        // Get catalog items from microservice instead of repository
+        var catalogItemIds = basketItems.Select(b => b.CatalogItemId).Distinct().ToList();
+        var catalogItems = new List<CatalogItemDto>();
+
+        foreach (var itemId in catalogItemIds)
+        {
+            var catalogItem = await _catalogServiceClient.GetCatalogItemByIdAsync(itemId);
+            if (catalogItem != null)
+            {
+                catalogItems.Add(catalogItem);
+            }
+        }
 
         var items = basketItems.Select(basketItem =>
         {
@@ -91,3 +102,5 @@ public class BasketViewModelService : IBasketViewModelService
         return counter;
     }
 }
+
+

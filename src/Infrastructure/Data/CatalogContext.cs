@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.eShopWeb.ApplicationCore.Entities;
 using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
 using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
+using ProductCatalogMS.Entities;
 
 namespace Microsoft.eShopWeb.Infrastructure.Data;
 

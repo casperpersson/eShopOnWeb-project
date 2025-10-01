@@ -11,12 +11,14 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.eShopWeb;
+using Microsoft.eShopWeb.ApplicationCore.HttpClients;
 using Microsoft.eShopWeb.ApplicationCore.Interfaces;
 using Microsoft.eShopWeb.Infrastructure.Data;
 using Microsoft.eShopWeb.Infrastructure.Identity;
 using Microsoft.eShopWeb.Web;
 using Microsoft.eShopWeb.Web.Configuration;
 using Microsoft.eShopWeb.Web.HealthChecks;
+using Microsoft.eShopWeb.Web.Services;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -43,6 +45,14 @@ else{
 }
 
 builder.Services.AddCookieSettings();
+builder.Services.AddHttpClient<CatalogServiceClient>(client =>
+{
+    // Update this URL to match your microservice deployment
+    client.BaseAddress = new Uri(builder.Configuration["CatalogMicroserviceUrl"] ?? "https://localhost:7001/");
+    client.Timeout = TimeSpan.FromSeconds(30);
+});
+builder.Services.AddScoped<ICatalogViewModelService, MicroserviceCatalogViewModelService>();
+
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>

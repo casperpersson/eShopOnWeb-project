@@ -1,4 +1,5 @@
 ﻿using Microsoft.eShopWeb.ApplicationCore.Entities;
+using ProductCatalogMS.Entities;
 using Xunit;
 
 namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Specifications;
