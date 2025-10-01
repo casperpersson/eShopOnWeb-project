@@ -4,8 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
+using Microsoft.eShopWeb.ApplicationCore.HttpClients;
 using MinimalApi.Endpoint;
 
 namespace Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints;
@@ -13,30 +12,31 @@ namespace Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints;
 /// <summary>
 /// Deletes a Catalog Item
 /// </summary>
-public class DeleteCatalogItemEndpoint : IEndpoint<IResult, DeleteCatalogItemRequest, IRepository<CatalogItem>>
+public class DeleteCatalogItemEndpoint : IEndpoint<IResult, DeleteCatalogItemRequest, CatalogServiceClient>
 {
     public void AddRoute(IEndpointRouteBuilder app)
     {
         app.MapDelete("api/catalog-items/{catalogItemId}",
             [Authorize(Roles = BlazorShared.Authorization.Constants.Roles.ADMINISTRATORS, AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)] async
-            (int catalogItemId, IRepository<CatalogItem> itemRepository) =>
+            (int catalogItemId, CatalogServiceClient catalogServiceClient) =>
             {
-                return await HandleAsync(new DeleteCatalogItemRequest(catalogItemId), itemRepository);
+                return await HandleAsync(new DeleteCatalogItemRequest(catalogItemId), catalogServiceClient);
             })
             .Produces<DeleteCatalogItemResponse>()
             .WithTags("CatalogItemEndpoints");
     }
 
-    public async Task<IResult> HandleAsync(DeleteCatalogItemRequest request, IRepository<CatalogItem> itemRepository)
+    public async Task<IResult> HandleAsync(DeleteCatalogItemRequest request, CatalogServiceClient catalogServiceClient)
     {
         var response = new DeleteCatalogItemResponse(request.CorrelationId());
 
-        var itemToDelete = await itemRepository.GetByIdAsync(request.CatalogItemId);
-        if (itemToDelete is null)
+        // Delete item via microservice
+        var deleted = await catalogServiceClient.DeleteCatalogItemAsync(request.CatalogItemId);
+        if (!deleted)
             return Results.NotFound();
 
-        await itemRepository.DeleteAsync(itemToDelete);
-
+        response.Status = "Deleted";
         return Results.Ok(response);
     }
 }
+

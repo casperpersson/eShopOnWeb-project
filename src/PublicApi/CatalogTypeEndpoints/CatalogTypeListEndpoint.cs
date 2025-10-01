@@ -4,8 +4,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
+using Microsoft.eShopWeb.ApplicationCore.HttpClients;
 using MinimalApi.Endpoint;
 
 namespace Microsoft.eShopWeb.PublicApi.CatalogTypeEndpoints;
@@ -13,7 +12,7 @@ namespace Microsoft.eShopWeb.PublicApi.CatalogTypeEndpoints;
 /// <summary>
 /// List Catalog Types
 /// </summary>
-public class CatalogTypeListEndpoint : IEndpoint<IResult, IRepository<CatalogType>>
+public class CatalogTypeListEndpoint : IEndpoint<IResult, CatalogServiceClient>
 {
     private readonly IMapper _mapper;
 
@@ -25,21 +24,28 @@ public class CatalogTypeListEndpoint : IEndpoint<IResult, IRepository<CatalogTyp
     public void AddRoute(IEndpointRouteBuilder app)
     {
         app.MapGet("api/catalog-types",
-            async (IRepository<CatalogType> catalogTypeRepository) =>
+            async (CatalogServiceClient catalogServiceClient) =>
             {
-                return await HandleAsync(catalogTypeRepository);
+                return await HandleAsync(catalogServiceClient);
             })
             .Produces<ListCatalogTypesResponse>()
             .WithTags("CatalogTypeEndpoints");
     }
 
-    public async Task<IResult> HandleAsync(IRepository<CatalogType> catalogTypeRepository)
+    public async Task<IResult> HandleAsync(CatalogServiceClient catalogServiceClient)
     {
         var response = new ListCatalogTypesResponse();
 
-        var items = await catalogTypeRepository.ListAsync();
+        // Get types from microservice instead of repository
+        var typesFromMicroservice = await catalogServiceClient.GetCatalogTypesAsync();
 
-        response.CatalogTypes.AddRange(items.Select(_mapper.Map<CatalogTypeDto>));
+        // Map from microservice DTOs to PublicApi DTOs
+        response.CatalogTypes.AddRange(typesFromMicroservice.Select(typeFromMs =>
+            new CatalogTypeDto
+            {
+                Id = typeFromMs.Id,
+                Name = typeFromMs.Type  // Note: microservice DTO has 'Type', PublicApi DTO has 'Name'
+            }));
 
         return Results.Ok(response);
     }

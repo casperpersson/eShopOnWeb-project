@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
+using Microsoft.eShopWeb.ApplicationCore.HttpClients;
 using Microsoft.eShopWeb.ApplicationCore.Interfaces;
 using MinimalApi.Endpoint;
 
@@ -13,8 +13,8 @@ namespace Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints;
 /// <summary>
 /// Updates a Catalog Item
 /// </summary>
-public class UpdateCatalogItemEndpoint : IEndpoint<IResult, UpdateCatalogItemRequest, IRepository<CatalogItem>>
-{ 
+public class UpdateCatalogItemEndpoint : IEndpoint<IResult, UpdateCatalogItemRequest, CatalogServiceClient>
+{
     private readonly IUriComposer _uriComposer;
 
     public UpdateCatalogItemEndpoint(IUriComposer uriComposer)
@@ -26,42 +26,62 @@ public class UpdateCatalogItemEndpoint : IEndpoint<IResult, UpdateCatalogItemReq
     {
         app.MapPut("api/catalog-items",
             [Authorize(Roles = BlazorShared.Authorization.Constants.Roles.ADMINISTRATORS, AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)] async
-            (UpdateCatalogItemRequest request, IRepository<CatalogItem> itemRepository) =>
+            (UpdateCatalogItemRequest request, CatalogServiceClient catalogServiceClient) =>
             {
-                return await HandleAsync(request, itemRepository);
+                return await HandleAsync(request, catalogServiceClient);
             })
             .Produces<UpdateCatalogItemResponse>()
             .WithTags("CatalogItemEndpoints");
     }
 
-    public async Task<IResult> HandleAsync(UpdateCatalogItemRequest request, IRepository<CatalogItem> itemRepository)
+    public async Task<IResult> HandleAsync(UpdateCatalogItemRequest request, CatalogServiceClient catalogServiceClient)
     {
         var response = new UpdateCatalogItemResponse(request.CorrelationId());
 
-        var existingItem = await itemRepository.GetByIdAsync(request.Id);
+        // Check if the item exists via microservice
+        var existingItem = await catalogServiceClient.GetCatalogItemByIdAsync(request.Id);
         if (existingItem == null)
         {
             return Results.NotFound();
         }
 
-        CatalogItem.CatalogItemDetails details = new(request.Name, request.Description, request.Price);
-        existingItem.UpdateDetails(details);
-        existingItem.UpdateBrand(request.CatalogBrandId);
-        existingItem.UpdateType(request.CatalogTypeId);
+        // Update item details via microservice
+        await catalogServiceClient.UpdateCatalogItemDetailsAsync(request.Id, request.Name, request.Description, request.Price);
 
-        await itemRepository.UpdateAsync(existingItem);
+        // Update brand if changed
+        if (existingItem.CatalogBrandId != request.CatalogBrandId)
+        {
+            await catalogServiceClient.UpdateCatalogItemBrandAsync(request.Id, request.CatalogBrandId);
+        }
 
+        // Update type if changed
+        if (existingItem.CatalogTypeId != request.CatalogTypeId)
+        {
+            await catalogServiceClient.UpdateCatalogItemTypeAsync(request.Id, request.CatalogTypeId);
+        }
+
+        // Get the updated item to return in response
+        var updatedItem = await catalogServiceClient.GetCatalogItemByIdAsync(request.Id);
+        if (updatedItem == null)
+        {
+            return Results.Problem("Failed to retrieve updated item");
+        }
+
+        // Map from microservice DTO to PublicApi DTO
         var dto = new CatalogItemDto
         {
-            Id = existingItem.Id,
-            CatalogBrandId = existingItem.CatalogBrandId,
-            CatalogTypeId = existingItem.CatalogTypeId,
-            Description = existingItem.Description,
-            Name = existingItem.Name,
-            PictureUri = _uriComposer.ComposePicUri(existingItem.PictureUri),
-            Price = existingItem.Price
+            Id = updatedItem.Id,
+            CatalogBrandId = updatedItem.CatalogBrandId,
+            CatalogTypeId = updatedItem.CatalogTypeId,
+            Description = updatedItem.Description,
+            Name = updatedItem.Name,
+            PictureUri = _uriComposer.ComposePicUri(updatedItem.PictureUri),
+            Price = updatedItem.Price
         };
+
         response.CatalogItem = dto;
         return Results.Ok(response);
     }
 }
+
+

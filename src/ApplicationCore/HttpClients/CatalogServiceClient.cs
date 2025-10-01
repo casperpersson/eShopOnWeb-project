@@ -143,6 +143,124 @@ public class CatalogServiceClient
         }
     }
 
+    public async Task<CatalogItemDto> CreateCatalogItemAsync(string name, string description, decimal price, int catalogTypeId, int catalogBrandId, string pictureUri = "")
+    {
+        _logger.LogInformation("Creating catalog item via microservice");
+
+        try
+        {
+            var request = new
+            {
+                Name = name,
+                Description = description,
+                Price = price,
+                CatalogTypeId = catalogTypeId,
+                CatalogBrandId = catalogBrandId,
+                PictureUri = pictureUri
+            };
+
+            var json = JsonSerializer.Serialize(request);
+            var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+
+            var response = await _httpClient.PostAsync("api/catalogitem", content);
+            response.EnsureSuccessStatusCode();
+
+            var responseJson = await response.Content.ReadAsStringAsync();
+            var createdItem = JsonSerializer.Deserialize<CatalogItemDto>(responseJson, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            });
+
+            return createdItem ?? throw new InvalidOperationException("Failed to create catalog item");
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error creating catalog item via microservice");
+            throw;
+        }
+    }
+
+    public async Task<bool> CheckCatalogItemNameExistsAsync(string name)
+    {
+        _logger.LogInformation("Checking if catalog item name {Name} exists via microservice", name);
+
+        try
+        {
+            // Get all items and check if name exists (simple implementation)
+            var allItems = await GetCatalogItemsAsync();
+            return allItems.Any(item => string.Equals(item.Name, name, StringComparison.OrdinalIgnoreCase));
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error checking catalog item name existence via microservice");
+            throw;
+        }
+    }
+
+    public async Task<bool> DeleteCatalogItemAsync(int id)
+    {
+        _logger.LogInformation("Deleting catalog item {Id} via microservice", id);
+
+        try
+        {
+            var response = await _httpClient.DeleteAsync($"api/catalogitem/{id}");
+
+            if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+                return false;
+
+            response.EnsureSuccessStatusCode();
+            return true;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error deleting catalog item {Id} via microservice", id);
+            throw;
+        }
+    }
+
+    public async Task UpdateCatalogItemBrandAsync(int id, int catalogBrandId)
+    {
+        _logger.LogInformation("Updating catalog item {Id} brand via microservice", id);
+
+        try
+        {
+            var request = new { CatalogBrandId = catalogBrandId };
+            var json = JsonSerializer.Serialize(request);
+            var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+
+            var response = await _httpClient.PutAsync($"api/catalogitem/{id}/brand", content);
+            response.EnsureSuccessStatusCode();
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error updating catalog item {Id} brand via microservice", id);
+            throw;
+        }
+    }
+
+    public async Task UpdateCatalogItemTypeAsync(int id, int catalogTypeId)
+    {
+        _logger.LogInformation("Updating catalog item {Id} type via microservice", id);
+
+        try
+        {
+            var request = new { CatalogTypeId = catalogTypeId };
+            var json = JsonSerializer.Serialize(request);
+            var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+
+            var response = await _httpClient.PutAsync($"api/catalogitem/{id}/type", content);
+            response.EnsureSuccessStatusCode();
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error updating catalog item {Id} type via microservice", id);
+            throw;
+        }
+    }
+
+
+
+
 }
 
 // DTOs for microservice communication

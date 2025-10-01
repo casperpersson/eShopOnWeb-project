@@ -5,9 +5,8 @@ using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
+using Microsoft.eShopWeb.ApplicationCore.HttpClients;
 using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Specifications;
 using MinimalApi.Endpoint;
 
 namespace Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints;
@@ -15,7 +14,7 @@ namespace Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints;
 /// <summary>
 /// List Catalog Items (paged)
 /// </summary>
-public class CatalogItemListPagedEndpoint : IEndpoint<IResult, ListPagedCatalogItemRequest, IRepository<CatalogItem>>
+public class CatalogItemListPagedEndpoint : IEndpoint<IResult, ListPagedCatalogItemRequest, CatalogServiceClient>
 {
     private readonly IUriComposer _uriComposer;
     private readonly IMapper _mapper;
@@ -29,36 +28,56 @@ public class CatalogItemListPagedEndpoint : IEndpoint<IResult, ListPagedCatalogI
     public void AddRoute(IEndpointRouteBuilder app)
     {
         app.MapGet("api/catalog-items",
-            async (int? pageSize, int? pageIndex, int? catalogBrandId, int? catalogTypeId, IRepository<CatalogItem> itemRepository) =>
+            async (int? pageSize, int? pageIndex, int? catalogBrandId, int? catalogTypeId, CatalogServiceClient catalogServiceClient) =>
             {
-                return await HandleAsync(new ListPagedCatalogItemRequest(pageSize, pageIndex, catalogBrandId, catalogTypeId), itemRepository);
+                return await HandleAsync(new ListPagedCatalogItemRequest(pageSize, pageIndex, catalogBrandId, catalogTypeId), catalogServiceClient);
             })
             .Produces<ListPagedCatalogItemResponse>()
             .WithTags("CatalogItemEndpoints");
     }
 
-    public async Task<IResult> HandleAsync(ListPagedCatalogItemRequest request, IRepository<CatalogItem> itemRepository)
+    public async Task<IResult> HandleAsync(ListPagedCatalogItemRequest request, CatalogServiceClient catalogServiceClient)
     {
-        await Task.Delay(1000);
+        await Task.Delay(1000); // Keep existing delay if needed for testing
         var response = new ListPagedCatalogItemResponse(request.CorrelationId());
 
-        var filterSpec = new CatalogFilterSpecification(request.CatalogBrandId, request.CatalogTypeId);
-        int totalItems = await itemRepository.CountAsync(filterSpec);
+        // Get all items from microservice
+        var allItemsFromMicroservice = await catalogServiceClient.GetCatalogItemsAsync();
 
-        var pagedSpec = new CatalogFilterPaginatedSpecification(
-            skip: request.PageIndex * request.PageSize,
-            take: request.PageSize,
-            brandId: request.CatalogBrandId,
-            typeId: request.CatalogTypeId);
+        // Apply filtering in memory (since microservice doesn't support filtering yet)
+        var filteredItems = allItemsFromMicroservice.AsEnumerable();
 
-        var items = await itemRepository.ListAsync(pagedSpec);
-
-        response.CatalogItems.AddRange(items.Select(_mapper.Map<CatalogItemDto>));
-        foreach (CatalogItemDto item in response.CatalogItems)
+        if (request.CatalogBrandId.HasValue)
         {
-            item.PictureUri = _uriComposer.ComposePicUri(item.PictureUri);
+            filteredItems = filteredItems.Where(i => i.CatalogBrandId == request.CatalogBrandId.Value);
         }
 
+        if (request.CatalogTypeId.HasValue)
+        {
+            filteredItems = filteredItems.Where(i => i.CatalogTypeId == request.CatalogTypeId.Value);
+        }
+
+        int totalItems = filteredItems.Count();
+
+        // Apply pagination
+        var pagedItems = filteredItems
+            .Skip(request.PageIndex * request.PageSize)
+            .Take(request.PageSize)
+            .ToList();
+
+        // Map from microservice DTOs to PublicApi DTOs
+        response.CatalogItems.AddRange(pagedItems.Select(itemFromMs => new CatalogItemDto
+        {
+            Id = itemFromMs.Id,
+            Name = itemFromMs.Name,
+            Description = itemFromMs.Description,
+            Price = itemFromMs.Price,
+            PictureUri = _uriComposer.ComposePicUri(itemFromMs.PictureUri),
+            CatalogTypeId = itemFromMs.CatalogTypeId,
+            CatalogBrandId = itemFromMs.CatalogBrandId
+        }));
+
+        // Calculate page count
         if (request.PageSize > 0)
         {
             response.PageCount = int.Parse(Math.Ceiling((decimal)totalItems / request.PageSize).ToString());
@@ -71,3 +90,4 @@ public class CatalogItemListPagedEndpoint : IEndpoint<IResult, ListPagedCatalogI
         return Results.Ok(response);
     }
 }
+
