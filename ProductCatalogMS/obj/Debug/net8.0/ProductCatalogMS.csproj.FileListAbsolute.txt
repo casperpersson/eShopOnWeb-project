@@ -71,3 +71,40 @@ C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\ne
 C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductC.732154F4.Up2Date
 C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductCatalogMS.genruntimeconfig.cache
 C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ref\ProductCatalogMS.dll
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\bin\Debug\net8.0\appsettings.Development.json
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\bin\Debug\net8.0\appsettings.json
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\bin\Debug\net8.0\ProductCatalogMS.staticwebassets.endpoints.json
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\bin\Debug\net8.0\ProductCatalogMS.exe
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\bin\Debug\net8.0\ProductCatalogMS.deps.json
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\bin\Debug\net8.0\ProductCatalogMS.runtimeconfig.json
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\bin\Debug\net8.0\ProductCatalogMS.dll
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\bin\Debug\net8.0\ProductCatalogMS.pdb
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductCatalogMS.csproj.AssemblyReference.cache
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductCatalogMS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductCatalogMS.AssemblyInfoInputs.cache
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductCatalogMS.AssemblyInfo.cs
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductCatalogMS.csproj.CoreCompileInputs.cache
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductCatalogMS.MvcApplicationPartsAssemblyInfo.cs
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductCatalogMS.MvcApplicationPartsAssemblyInfo.cache
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductCatalogMS.sourcelink.json
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\scopedcss\bundle\ProductCatalogMS.styles.css
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets.build.json
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets.development.json
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets\msbuild.ProductCatalogMS.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets\msbuild.ProductCatalogMS.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets\msbuild.build.ProductCatalogMS.props
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProductCatalogMS.props
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProductCatalogMS.props
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductC.732154F4.Up2Date
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductCatalogMS.dll
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\refint\ProductCatalogMS.dll
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductCatalogMS.pdb
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductCatalogMS.genruntimeconfig.cache
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ref\ProductCatalogMS.dll
