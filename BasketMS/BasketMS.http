@@ -1,0 +1,6 @@
+@BasketMS_HostAddress = http://localhost:5007
+
+GET {{BasketMS_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
