@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Skrivebord\\Studie\\Software PBA\\2. Sem\\eShopOnWeb-project\\ProductCatalogMS\\ProductCatalogMS.csproj": {}
+    "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\ProductCatalogMS.csproj": {}
   },
   "projects": {
-    "C:\\Skrivebord\\Studie\\Software PBA\\2. Sem\\eShopOnWeb-project\\ProductCatalogMS\\ProductCatalogMS.csproj": {
+    "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\ProductCatalogMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Skrivebord\\Studie\\Software PBA\\2. Sem\\eShopOnWeb-project\\ProductCatalogMS\\ProductCatalogMS.csproj",
+        "projectUniqueName": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\ProductCatalogMS.csproj",
         "projectName": "ProductCatalogMS",
-        "projectPath": "C:\\Skrivebord\\Studie\\Software PBA\\2. Sem\\eShopOnWeb-project\\ProductCatalogMS\\ProductCatalogMS.csproj",
-        "packagesPath": "C:\\Users\\grubb\\.nuget\\packages\\",
-        "outputPath": "C:\\Skrivebord\\Studie\\Software PBA\\2. Sem\\eShopOnWeb-project\\ProductCatalogMS\\obj\\",
+        "projectPath": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\ProductCatalogMS.csproj",
+        "packagesPath": "C:\\Users\\stamm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\grubb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\stamm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -75,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -568,10 +568,10 @@
             "readOnly": true
           },
           "catalogBrand": {
-            "nullable": true
+            "$ref": "#/components/schemas/CatalogBrand"
           },
           "catalogType": {
-            "nullable": true
+            "$ref": "#/components/schemas/CatalogType"
           }
         },
         "additionalProperties": false

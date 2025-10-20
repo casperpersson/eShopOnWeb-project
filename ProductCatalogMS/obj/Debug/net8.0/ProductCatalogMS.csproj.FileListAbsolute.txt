@@ -61,12 +61,6 @@ C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\ne
 C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets\msbuild.ProductCatalogMS.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets\msbuild.ProductCatalogMS.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets\msbuild.build.ProductCatalogMS.props
-C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProductCatalogMS.props
-C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProductCatalogMS.props
-C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductC.732154F4.Up2Date
 C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductCatalogMS.genruntimeconfig.cache
@@ -108,3 +102,8 @@ C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj
 C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductCatalogMS.pdb
 C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ProductCatalogMS.genruntimeconfig.cache
 C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\ref\ProductCatalogMS.dll
+C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\stamm\Documents\GitHub\eShopOnWeb-project\ProductCatalogMS\obj\Debug\net8.0\staticwebassets.build.json.cache
