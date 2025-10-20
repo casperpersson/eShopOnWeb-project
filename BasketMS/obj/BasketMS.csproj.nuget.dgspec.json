@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Skrivebord\\Studie\\Software PBA\\2. Sem\\eShopOnWeb-project\\ProductCatalogMS\\ProductCatalogMS.csproj": {}
+    "C:\\Skrivebord\\Studie\\Software PBA\\2. Sem\\eShopOnWeb-project\\BasketMS\\BasketMS.csproj": {}
   },
   "projects": {
-    "C:\\Skrivebord\\Studie\\Software PBA\\2. Sem\\eShopOnWeb-project\\ProductCatalogMS\\ProductCatalogMS.csproj": {
+    "C:\\Skrivebord\\Studie\\Software PBA\\2. Sem\\eShopOnWeb-project\\BasketMS\\BasketMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Skrivebord\\Studie\\Software PBA\\2. Sem\\eShopOnWeb-project\\ProductCatalogMS\\ProductCatalogMS.csproj",
-        "projectName": "ProductCatalogMS",
-        "projectPath": "C:\\Skrivebord\\Studie\\Software PBA\\2. Sem\\eShopOnWeb-project\\ProductCatalogMS\\ProductCatalogMS.csproj",
+        "projectUniqueName": "C:\\Skrivebord\\Studie\\Software PBA\\2. Sem\\eShopOnWeb-project\\BasketMS\\BasketMS.csproj",
+        "projectName": "BasketMS",
+        "projectPath": "C:\\Skrivebord\\Studie\\Software PBA\\2. Sem\\eShopOnWeb-project\\BasketMS\\BasketMS.csproj",
         "packagesPath": "C:\\Users\\grubb\\.nuget\\packages\\",
-        "outputPath": "C:\\Skrivebord\\Studie\\Software PBA\\2. Sem\\eShopOnWeb-project\\ProductCatalogMS\\obj\\",
+        "outputPath": "C:\\Skrivebord\\Studie\\Software PBA\\2. Sem\\eShopOnWeb-project\\BasketMS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -53,7 +53,7 @@
           "dependencies": {
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[6.6.2, )"
             }
           },
           "imports": [
