@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using ProductCatalogMS.Data;
 using ProductCatalogMS.Entities;
 
 namespace ProductCatalogMS.Controllers;
@@ -7,55 +9,70 @@ namespace ProductCatalogMS.Controllers;
 [Route("api/[controller]")]
 public class CatalogItemController : ControllerBase
 {
-    // In-memory storage for demo - replace with repository/DbContext in production
-    private static readonly List<CatalogItem> _catalogItems = new();
-    private static int _nextId = 6; // Start from 6 since we'll add 5 items
+    private readonly CatalogContext _context;
+    private readonly ILogger<CatalogItemController> _logger;
 
-    static CatalogItemController()
+    public CatalogItemController(CatalogContext context, ILogger<CatalogItemController> logger)
     {
-        // Initialize with sample data
-        InitializeSampleData();
-    }
-
-    private static void InitializeSampleData()
-    {
-        var sampleItems = new[]
-        {
-            new CatalogItem(2, 1, ".NET Bot Black Sweatshirt", ".NET Bot Black Sweatshirt", 19.5M, "images/products/1.png"),
-            new CatalogItem(1, 1, ".NET Black & White Mug", ".NET Black & White Mug", 8.50M, "images/products/2.png"),
-            new CatalogItem(2, 2, "Prism White T-Shirt", "Prism White T-Shirt", 12.0M, "images/products/3.png"),
-            new CatalogItem(2, 1, ".NET Foundation Sweatshirt", ".NET Foundation Sweatshirt", 12.0M, "images/products/4.png"),
-            new CatalogItem(1, 2, "Roslyn Red Sheet", "Roslyn Red Sheet", 8.5M, "images/products/5.png")
-        };
-
-        for (int i = 0; i < sampleItems.Length; i++)
-        {
-            SetId(sampleItems[i], i + 1);
-            _catalogItems.Add(sampleItems[i]);
-        }
+        _context = context;
+        _logger = logger;
     }
 
     [HttpGet]
-    public ActionResult<IEnumerable<CatalogItem>> GetAll()
-    {
-        return Ok(_catalogItems);
-    }
-
-    [HttpGet("{id}")]
-    public ActionResult<CatalogItem> GetById(int id)
-    {
-        var item = _catalogItems.FirstOrDefault(x => x.Id == id);
-        if (item == null)
-            return NotFound($"CatalogItem with ID {id} not found.");
-
-        return Ok(item);
-    }
-
-    [HttpPost]
-    public ActionResult<CatalogItem> Create(CreateCatalogItemRequest request)
+    public async Task<ActionResult<IEnumerable<CatalogItem>>> GetAll()
     {
         try
         {
+            var items = await _context.CatalogItems
+                .Include(i => i.CatalogBrand)
+                .Include(i => i.CatalogType)
+                .ToListAsync();
+            return Ok(items);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error retrieving catalog items");
+            return StatusCode(500, "An error occurred retrieving catalog items");
+        }
+    }
+
+    [HttpGet("{id}")]
+    public async Task<ActionResult<CatalogItem>> GetById(int id)
+    {
+        try
+        {
+            var item = await _context.CatalogItems
+                .Include(i => i.CatalogBrand)
+                .Include(i => i.CatalogType)
+                .FirstOrDefaultAsync(x => x.Id == id);
+
+            if (item == null)
+                return NotFound($"CatalogItem with ID {id} not found.");
+
+            return Ok(item);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error retrieving catalog item with ID {Id}", id);
+            return StatusCode(500, "An error occurred retrieving the catalog item");
+        }
+    }
+
+    [HttpPost]
+    public async Task<ActionResult<CatalogItem>> Create(CreateCatalogItemRequest request)
+    {
+        try
+        {
+            // Validate that the brand and type exist
+            var brandExists = await _context.CatalogBrands.AnyAsync(b => b.Id == request.CatalogBrandId);
+            var typeExists = await _context.CatalogTypes.AnyAsync(t => t.Id == request.CatalogTypeId);
+
+            if (!brandExists)
+                return BadRequest($"CatalogBrand with ID {request.CatalogBrandId} does not exist.");
+
+            if (!typeExists)
+                return BadRequest($"CatalogType with ID {request.CatalogTypeId} does not exist.");
+
             var catalogItem = new CatalogItem(
                 request.CatalogTypeId,
                 request.CatalogBrandId,
@@ -65,9 +82,8 @@ public class CatalogItemController : ControllerBase
                 request.PictureUri ?? ""
             );
 
-            // Set ID using reflection (in real app, this would be handled by database)
-            SetId(catalogItem, _nextId++);
-            _catalogItems.Add(catalogItem);
+            _context.CatalogItems.Add(catalogItem);
+            await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetById), new { id = catalogItem.Id }, catalogItem);
         }
@@ -75,106 +91,163 @@ public class CatalogItemController : ControllerBase
         {
             return BadRequest(ex.Message);
         }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error creating catalog item");
+            return StatusCode(500, "An error occurred creating the catalog item");
+        }
     }
 
     [HttpPut("{id}")]
-    public IActionResult UpdateDetails(int id, UpdateCatalogItemDetailsRequest request)
+    public async Task<IActionResult> UpdateDetails(int id, UpdateCatalogItemDetailsRequest request)
     {
-        var item = _catalogItems.FirstOrDefault(x => x.Id == id);
-        if (item == null)
-            return NotFound($"CatalogItem with ID {id} not found.");
-
         try
         {
+            var item = await _context.CatalogItems.FindAsync(id);
+            if (item == null)
+                return NotFound($"CatalogItem with ID {id} not found.");
+
             item.UpdateDetails(request.Name, request.Description, request.Price);
+            await _context.SaveChangesAsync();
+
             return NoContent();
         }
         catch (ArgumentException ex)
         {
             return BadRequest(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error updating catalog item with ID {Id}", id);
+            return StatusCode(500, "An error occurred updating the catalog item");
         }
     }
 
     [HttpPut("{id}/brand")]
-    public IActionResult UpdateBrand(int id, UpdateBrandRequest request)
+    public async Task<IActionResult> UpdateBrand(int id, UpdateBrandRequest request)
     {
-        var item = _catalogItems.FirstOrDefault(x => x.Id == id);
-        if (item == null)
-            return NotFound($"CatalogItem with ID {id} not found.");
-
         try
         {
+            var item = await _context.CatalogItems.FindAsync(id);
+            if (item == null)
+                return NotFound($"CatalogItem with ID {id} not found.");
+
+            // Validate that the brand exists
+            var brandExists = await _context.CatalogBrands.AnyAsync(b => b.Id == request.CatalogBrandId);
+            if (!brandExists)
+                return BadRequest($"CatalogBrand with ID {request.CatalogBrandId} does not exist.");
+
             item.UpdateBrand(request.CatalogBrandId);
+            await _context.SaveChangesAsync();
+
             return NoContent();
         }
         catch (ArgumentException ex)
         {
             return BadRequest(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error updating catalog item brand with ID {Id}", id);
+            return StatusCode(500, "An error occurred updating the catalog item brand");
         }
     }
 
     [HttpPut("{id}/type")]
-    public IActionResult UpdateType(int id, UpdateTypeRequest request)
+    public async Task<IActionResult> UpdateType(int id, UpdateTypeRequest request)
     {
-        var item = _catalogItems.FirstOrDefault(x => x.Id == id);
-        if (item == null)
-            return NotFound($"CatalogItem with ID {id} not found.");
-
         try
         {
+            var item = await _context.CatalogItems.FindAsync(id);
+            if (item == null)
+                return NotFound($"CatalogItem with ID {id} not found.");
+
+            // Validate that the type exists
+            var typeExists = await _context.CatalogTypes.AnyAsync(t => t.Id == request.CatalogTypeId);
+            if (!typeExists)
+                return BadRequest($"CatalogType with ID {request.CatalogTypeId} does not exist.");
+
             item.UpdateType(request.CatalogTypeId);
+            await _context.SaveChangesAsync();
+
             return NoContent();
         }
         catch (ArgumentException ex)
         {
             return BadRequest(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error updating catalog item type with ID {Id}", id);
+            return StatusCode(500, "An error occurred updating the catalog item type");
         }
     }
 
     [HttpPut("{id}/picture")]
-    public IActionResult UpdatePicture(int id, UpdatePictureRequest request)
+    public async Task<IActionResult> UpdatePicture(int id, UpdatePictureRequest request)
     {
-        var item = _catalogItems.FirstOrDefault(x => x.Id == id);
-        if (item == null)
-            return NotFound($"CatalogItem with ID {id} not found.");
+        try
+        {
+            var item = await _context.CatalogItems.FindAsync(id);
+            if (item == null)
+                return NotFound($"CatalogItem with ID {id} not found.");
 
-        item.UpdatePictureUri(request.PictureName);
-        return NoContent();
+            item.UpdatePictureUri(request.PictureName);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error updating catalog item picture with ID {Id}", id);
+            return StatusCode(500, "An error occurred updating the catalog item picture");
+        }
     }
 
     [HttpPut("{id}/details")]
-    public IActionResult UpdateCatalogItemDetails(int id, UpdateCatalogItemDetailsRequest request)
+    public async Task<IActionResult> UpdateCatalogItemDetails(int id, UpdateCatalogItemDetailsRequest request)
     {
-        var item = _catalogItems.FirstOrDefault(x => x.Id == id);
-        if (item == null)
-            return NotFound($"CatalogItem with ID {id} not found.");
-
         try
         {
+            var item = await _context.CatalogItems.FindAsync(id);
+            if (item == null)
+                return NotFound($"CatalogItem with ID {id} not found.");
+
             item.UpdateDetails(request.Name, request.Description, request.Price);
+            await _context.SaveChangesAsync();
+
             return NoContent();
         }
         catch (ArgumentException ex)
         {
             return BadRequest(ex.Message);
         }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error updating catalog item details with ID {Id}", id);
+            return StatusCode(500, "An error occurred updating the catalog item details");
+        }
     }
 
     [HttpDelete("{id}")]
-    public IActionResult Delete(int id)
+    public async Task<IActionResult> Delete(int id)
     {
-        var item = _catalogItems.FirstOrDefault(x => x.Id == id);
-        if (item == null)
-            return NotFound($"CatalogItem with ID {id} not found.");
+        try
+        {
+            var item = await _context.CatalogItems.FindAsync(id);
+            if (item == null)
+                return NotFound($"CatalogItem with ID {id} not found.");
 
-        _catalogItems.Remove(item);
-        return NoContent();
-    }
+            _context.CatalogItems.Remove(item);
+            await _context.SaveChangesAsync();
 
-    private static void SetId(BaseEntity entity, int id)
-    {
-        var property = typeof(BaseEntity).GetProperty("Id");
-        property?.SetValue(entity, id);
+            return NoContent();
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error deleting catalog item with ID {Id}", id);
+            return StatusCode(500, "An error occurred deleting the catalog item");
+        }
     }
 }
 
@@ -197,5 +270,3 @@ public record UpdateCatalogItemDetailsRequest(
 public record UpdateBrandRequest(int CatalogBrandId);
 public record UpdateTypeRequest(int CatalogTypeId);
 public record UpdatePictureRequest(string PictureName);
-
-

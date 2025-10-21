@@ -72,8 +72,9 @@ public class CatalogItem : BaseEntity
         }
         PictureUri = $"images/products/{pictureName}?{DateTime.UtcNow.Ticks}";
     }
-    public string Brand { get; private set; }
-    public virtual CatalogBrand CatalogBrand { get; set; }
-    public virtual CatalogType CatalogType { get; set; }
+
+    // Navigation properties only - remove the Brand scalar property
+    public virtual CatalogBrand? CatalogBrand { get; set; }
+    public virtual CatalogType? CatalogType { get; set; }
 }
 

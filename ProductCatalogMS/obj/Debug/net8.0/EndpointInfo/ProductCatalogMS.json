@@ -562,11 +562,6 @@
             "type": "integer",
             "format": "int32"
           },
-          "brand": {
-            "type": "string",
-            "nullable": true,
-            "readOnly": true
-          },
           "catalogBrand": {
             "$ref": "#/components/schemas/CatalogBrand"
           },
