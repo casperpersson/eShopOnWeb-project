@@ -6,15 +6,26 @@ services:
     build:
       context: .
       dockerfile: src/Web/Dockerfile
-    depends_on:
-      - "sqlserver"
+
+      
   eshoppublicapi:
     image: ${DOCKER_REGISTRY-}eshoppublicapi
     build:
       context: .
       dockerfile: src/PublicApi/Dockerfile
-    depends_on:
-      - "sqlserver"
+
+      
+  productcatalogms:
+    image: ${DOCKER_REGISTRY-}productcatalogms
+    build:
+      context: ../ProductCatalogMS  
+      dockerfile: Dockerfile        
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=ProductCatalog;User Id=sa;Password=@someThingComplicated1234;TrustServerCertificate=True;
+      - ASPNETCORE_ENVIRONMENT=Development
+    volumes:
+      - productcatalog_keys:/root/.aspnet/DataProtection-Keys
+      
   sqlserver:
     image: mcr.microsoft.com/azure-sql-edge
     ports:
@@ -23,3 +34,5 @@ services:
       - SA_PASSWORD=@someThingComplicated1234
       - ACCEPT_EULA=Y
 
+volumes:
+  productcatalog_keys:
