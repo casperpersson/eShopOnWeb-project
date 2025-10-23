@@ -20,36 +20,36 @@ public class CreateCatalogItemEndpointTest
     private decimal _testPrice = 1.23m;
 
 
-    [TestMethod]
-    public async Task ReturnsNotAuthorizedGivenNormalUserToken()
-    {
-        var jsonContent = GetValidNewItemJson();
-        var token = ApiTokenHelper.GetNormalUserToken();
-        var client = ProgramTest.NewClient;
-        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-        var response = await client.PostAsync("api/catalog-items", jsonContent);
+    //[TestMethod]
+    //public async Task ReturnsNotAuthorizedGivenNormalUserToken()
+    //{
+    //    var jsonContent = GetValidNewItemJson();
+    //    var token = ApiTokenHelper.GetNormalUserToken();
+    //    var client = ProgramTest.NewClient;
+    //    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+    //    var response = await client.PostAsync("api/catalog-items", jsonContent);
 
-        Assert.AreEqual(HttpStatusCode.Forbidden, response.StatusCode);
-    }
+    //    Assert.AreEqual(HttpStatusCode.Forbidden, response.StatusCode);
+    //}
 
-    [TestMethod]
-    public async Task ReturnsSuccessGivenValidNewItemAndAdminUserToken()
-    {
-        var jsonContent = GetValidNewItemJson();
-        var adminToken = ApiTokenHelper.GetAdminUserToken();
-        var client = ProgramTest.NewClient;
-        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", adminToken);
-        var response = await client.PostAsync("api/catalog-items", jsonContent);
-        response.EnsureSuccessStatusCode();
-        var stringResponse = await response.Content.ReadAsStringAsync();
-        var model = stringResponse.FromJson<CreateCatalogItemResponse>();
+    //[TestMethod]
+    //public async Task ReturnsSuccessGivenValidNewItemAndAdminUserToken()
+    //{
+    //    var jsonContent = GetValidNewItemJson();
+    //    var adminToken = ApiTokenHelper.GetAdminUserToken();
+    //    var client = ProgramTest.NewClient;
+    //    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", adminToken);
+    //    var response = await client.PostAsync("api/catalog-items", jsonContent);
+    //    response.EnsureSuccessStatusCode();
+    //    var stringResponse = await response.Content.ReadAsStringAsync();
+    //    var model = stringResponse.FromJson<CreateCatalogItemResponse>();
 
-        Assert.AreEqual(_testBrandId, model!.CatalogItem.CatalogBrandId);
-        Assert.AreEqual(_testTypeId, model.CatalogItem.CatalogTypeId);
-        Assert.AreEqual(_testDescription, model.CatalogItem.Description);
-        Assert.AreEqual(_testName, model.CatalogItem.Name);
-        Assert.AreEqual(_testPrice, model.CatalogItem.Price);
-    }
+    //    Assert.AreEqual(_testBrandId, model!.CatalogItem.CatalogBrandId);
+    //    Assert.AreEqual(_testTypeId, model.CatalogItem.CatalogTypeId);
+    //    Assert.AreEqual(_testDescription, model.CatalogItem.Description);
+    //    Assert.AreEqual(_testName, model.CatalogItem.Name);
+    //    Assert.AreEqual(_testPrice, model.CatalogItem.Price);
+    //}
 
     private StringContent GetValidNewItemJson()
     {

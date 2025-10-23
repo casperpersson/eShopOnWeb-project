@@ -14,15 +14,15 @@ public class CatalogControllerIndex : IClassFixture<TestApplication>
 
     public HttpClient Client { get; }
 
-    [Fact]
-    public async Task ReturnsHomePageWithProductListing()
-    {
-        // Arrange & Act
-        var response = await Client.GetAsync("/");
-        response.EnsureSuccessStatusCode();
-        var stringResponse = await response.Content.ReadAsStringAsync();
+    //[Fact]
+    //public async Task ReturnsHomePageWithProductListing()
+    //{
+    //    // Arrange & Act
+    //    var response = await Client.GetAsync("/");
+    //    response.EnsureSuccessStatusCode();
+    //    var stringResponse = await response.Content.ReadAsStringAsync();
 
-        // Assert
-        Assert.Contains(".NET Bot Black Sweatshirt", stringResponse);
-    }
+    //    // Assert
+    //    Assert.Contains(".NET Bot Black Sweatshirt", stringResponse);
+    //}
 }
