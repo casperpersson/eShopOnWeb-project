@@ -3,207 +3,124 @@
   "WorkspaceRootPath": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{93E29851-0CFF-4631-A4CD-52129DABB1D2}|..\\ProductCatalogMS\\ProductCatalogMS.csproj|c:\\users\\stamm\\documents\\github\\productcatalogms\\controllers\\catalogtypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\applicationcore\\specifications\\catalogfilterpaginatedspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|solutionrelative:src\\applicationcore\\specifications\\catalogfilterpaginatedspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93E29851-0CFF-4631-A4CD-52129DABB1D2}|..\\ProductCatalogMS\\ProductCatalogMS.csproj|c:\\users\\stamm\\documents\\github\\productcatalogms\\controllers\\catalogbrandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EFB5482-F942-4C3D-94B0-9B70596E6D0A}|tests\\FunctionalTests\\FunctionalTests.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\tests\\functionaltests\\functionaltests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7EFB5482-F942-4C3D-94B0-9B70596E6D0A}|tests\\FunctionalTests\\FunctionalTests.csproj|solutionrelative:tests\\functionaltests\\functionaltests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93E29851-0CFF-4631-A4CD-52129DABB1D2}|..\\ProductCatalogMS\\ProductCatalogMS.csproj|c:\\users\\stamm\\documents\\github\\productcatalogms\\controllers\\catalogitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93E29851-0CFF-4631-A4CD-52129DABB1D2}|..\\ProductCatalogMS\\ProductCatalogMS.csproj|c:\\users\\stamm\\documents\\github\\productcatalogms\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93E29851-0CFF-4631-A4CD-52129DABB1D2}|..\\ProductCatalogMS\\ProductCatalogMS.csproj|c:\\users\\stamm\\documents\\github\\productcatalogms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93E29851-0CFF-4631-A4CD-52129DABB1D2}|..\\ProductCatalogMS\\ProductCatalogMS.csproj|c:\\users\\stamm\\documents\\github\\productcatalogms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\publicapi\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|solutionrelative:src\\publicapi\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\publicapi\\catalogtypeendpoints\\catalogtypelistendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|solutionrelative:src\\publicapi\\catalogtypeendpoints\\catalogtypelistendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\publicapi\\catalogitemendpoints\\updatecatalogitemendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|solutionrelative:src\\publicapi\\catalogitemendpoints\\updatecatalogitemendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\applicationcore\\httpclients\\catalogserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|solutionrelative:src\\applicationcore\\httpclients\\catalogserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\publicapi\\catalogitemendpoints\\deletecatalogitemendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|solutionrelative:src\\publicapi\\catalogitemendpoints\\deletecatalogitemendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\publicapi\\catalogitemendpoints\\createcatalogitemendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|solutionrelative:src\\publicapi\\catalogitemendpoints\\createcatalogitemendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\publicapi\\catalogitemendpoints\\catalogitemlistpagedendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|solutionrelative:src\\publicapi\\catalogitemendpoints\\catalogitemlistpagedendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\publicapi\\catalogitemendpoints\\catalogitemgetbyidendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|solutionrelative:src\\publicapi\\catalogitemendpoints\\catalogitemgetbyidendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\publicapi\\catalogbrandendpoints\\catalogbrandlistendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|solutionrelative:src\\publicapi\\catalogbrandendpoints\\catalogbrandlistendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93E29851-0CFF-4631-A4CD-52129DABB1D2}|..\\ProductCatalogMS\\ProductCatalogMS.csproj|c:\\users\\stamm\\documents\\github\\productcatalogms\\productcatalogms.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\web\\web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|solutionrelative:src\\web\\web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\publicapi\\publicapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|solutionrelative:src\\publicapi\\publicapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\web\\pages\\basket\\checkout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|solutionrelative:src\\web\\pages\\basket\\checkout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C461394-ABDC-43CD-A798-71249C58BA67}|src\\Infrastructure\\Infrastructure.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7C461394-ABDC-43CD-A798-71249C58BA67}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\applicationcore\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|solutionrelative:src\\applicationcore\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\applicationcore\\applicationcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|solutionrelative:src\\applicationcore\\applicationcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\web\\services\\catalogviewmodelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|solutionrelative:src\\web\\services\\catalogviewmodelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{757E99E6-1F45-AAD9-A18A-6C0B55B1EF56}|ProductCatalogMS\\ProductCatalogMS.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\productcatalogms\\productcatalogms.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{757E99E6-1F45-AAD9-A18A-6C0B55B1EF56}|ProductCatalogMS\\ProductCatalogMS.csproj|solutionrelative:productcatalogms\\productcatalogms.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\web\\services\\microservicecatalogviewmodelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|solutionrelative:src\\web\\services\\microservicecatalogviewmodelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EFB5482-F942-4C3D-94B0-9B70596E6D0A}|tests\\FunctionalTests\\FunctionalTests.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\tests\\functionaltests\\web\\pages\\basket\\checkouttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EFB5482-F942-4C3D-94B0-9B70596E6D0A}|tests\\FunctionalTests\\FunctionalTests.csproj|solutionrelative:tests\\functionaltests\\web\\pages\\basket\\checkouttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\web\\services\\catalogitemviewmodelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|solutionrelative:src\\web\\services\\catalogitemviewmodelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EFB5482-F942-4C3D-94B0-9B70596E6D0A}|tests\\FunctionalTests\\FunctionalTests.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\tests\\functionaltests\\web\\pages\\basket\\basketpagecheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EFB5482-F942-4C3D-94B0-9B70596E6D0A}|tests\\FunctionalTests\\FunctionalTests.csproj|solutionrelative:tests\\functionaltests\\web\\pages\\basket\\basketpagecheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\web\\services\\basketviewmodelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|solutionrelative:src\\web\\services\\basketviewmodelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EFB5482-F942-4C3D-94B0-9B70596E6D0A}|tests\\FunctionalTests\\FunctionalTests.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\tests\\functionaltests\\web\\controllers\\catalogcontrollerindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EFB5482-F942-4C3D-94B0-9B70596E6D0A}|tests\\FunctionalTests\\FunctionalTests.csproj|solutionrelative:tests\\functionaltests\\web\\controllers\\catalogcontrollerindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\web\\pages\\basket\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|solutionrelative:src\\web\\pages\\basket\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D53EF010-8F8C-4337-A059-456E19D8AE63}|tests\\PublicApiIntegrationTests\\PublicApiIntegrationTests.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\tests\\publicapiintegrationtests\\catalogitemendpoints\\deletecatalogitemendpointtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53EF010-8F8C-4337-A059-456E19D8AE63}|tests\\PublicApiIntegrationTests\\PublicApiIntegrationTests.csproj|solutionrelative:tests\\publicapiintegrationtests\\catalogitemendpoints\\deletecatalogitemendpointtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C461394-ABDC-43CD-A798-71249C58BA67}|src\\Infrastructure\\Infrastructure.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\infrastructure\\data\\config\\catalogitemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C461394-ABDC-43CD-A798-71249C58BA67}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\data\\config\\catalogitemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D53EF010-8F8C-4337-A059-456E19D8AE63}|tests\\PublicApiIntegrationTests\\PublicApiIntegrationTests.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\tests\\publicapiintegrationtests\\catalogitemendpoints\\catalogitemlistpagedendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53EF010-8F8C-4337-A059-456E19D8AE63}|tests\\PublicApiIntegrationTests\\PublicApiIntegrationTests.csproj|solutionrelative:tests\\publicapiintegrationtests\\catalogitemendpoints\\catalogitemlistpagedendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF6877E6-59CB-43A7-8C2C-E70DD70CC5B6}|tests\\UnitTests\\UnitTests.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\tests\\unittests\\applicationcore\\specifications\\catalogfilterpaginatedspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF6877E6-59CB-43A7-8C2C-E70DD70CC5B6}|tests\\UnitTests\\UnitTests.csproj|solutionrelative:tests\\unittests\\applicationcore\\specifications\\catalogfilterpaginatedspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D53EF010-8F8C-4337-A059-456E19D8AE63}|tests\\PublicApiIntegrationTests\\PublicApiIntegrationTests.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\tests\\publicapiintegrationtests\\catalogitemendpoints\\catalogitemgetbyidendpointtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53EF010-8F8C-4337-A059-456E19D8AE63}|tests\\PublicApiIntegrationTests\\PublicApiIntegrationTests.csproj|solutionrelative:tests\\publicapiintegrationtests\\catalogitemendpoints\\catalogitemgetbyidendpointtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF6877E6-59CB-43A7-8C2C-E70DD70CC5B6}|tests\\UnitTests\\UnitTests.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\tests\\unittests\\applicationcore\\specifications\\catalogitemsspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF6877E6-59CB-43A7-8C2C-E70DD70CC5B6}|tests\\UnitTests\\UnitTests.csproj|solutionrelative:tests\\unittests\\applicationcore\\specifications\\catalogitemsspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D53EF010-8F8C-4337-A059-456E19D8AE63}|tests\\PublicApiIntegrationTests\\PublicApiIntegrationTests.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\tests\\publicapiintegrationtests\\catalogitemendpoints\\createcatalogitemendpointtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53EF010-8F8C-4337-A059-456E19D8AE63}|tests\\PublicApiIntegrationTests\\PublicApiIntegrationTests.csproj|solutionrelative:tests\\publicapiintegrationtests\\catalogitemendpoints\\createcatalogitemendpointtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D53EF010-8F8C-4337-A059-456E19D8AE63}|tests\\PublicApiIntegrationTests\\PublicApiIntegrationTests.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\tests\\publicapiintegrationtests\\authendpoints\\authenticateendpointtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53EF010-8F8C-4337-A059-456E19D8AE63}|tests\\PublicApiIntegrationTests\\PublicApiIntegrationTests.csproj|solutionrelative:tests\\publicapiintegrationtests\\authendpoints\\authenticateendpointtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EFB5482-F942-4C3D-94B0-9B70596E6D0A}|tests\\FunctionalTests\\FunctionalTests.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\tests\\functionaltests\\web\\pages\\homepageonget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EFB5482-F942-4C3D-94B0-9B70596E6D0A}|tests\\FunctionalTests\\FunctionalTests.csproj|solutionrelative:tests\\functionaltests\\web\\pages\\homepageonget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EFB5482-F942-4C3D-94B0-9B70596E6D0A}|tests\\FunctionalTests\\FunctionalTests.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\tests\\functionaltests\\web\\pages\\basket\\indextest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EFB5482-F942-4C3D-94B0-9B70596E6D0A}|tests\\FunctionalTests\\FunctionalTests.csproj|solutionrelative:tests\\functionaltests\\web\\pages\\basket\\indextest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EF6877E6-59CB-43A7-8C2C-E70DD70CC5B6}|tests\\UnitTests\\UnitTests.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\tests\\unittests\\applicationcore\\specifications\\catalogfilterspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF6877E6-59CB-43A7-8C2C-E70DD70CC5B6}|tests\\UnitTests\\UnitTests.csproj|solutionrelative:tests\\unittests\\applicationcore\\specifications\\catalogfilterspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C461394-ABDC-43CD-A798-71249C58BA67}|src\\Infrastructure\\Infrastructure.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\infrastructure\\data\\config\\catalogtypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C461394-ABDC-43CD-A798-71249C58BA67}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\data\\config\\catalogtypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\web\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|solutionrelative:src\\web\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93E29851-0CFF-4631-A4CD-52129DABB1D2}|..\\ProductCatalogMS\\ProductCatalogMS.csproj|c:\\users\\stamm\\documents\\github\\productcatalogms\\entities\\catalogitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\publicapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B5E4F33C-4667-4A55-AF6A-740F84C4CF3A}|src\\PublicApi\\PublicApi.csproj|solutionrelative:src\\publicapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93E29851-0CFF-4631-A4CD-52129DABB1D2}|..\\ProductCatalogMS\\ProductCatalogMS.csproj|c:\\users\\stamm\\documents\\github\\productcatalogms\\entities\\catalogbrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FCBE191-34FE-4B2E-8915-CA81553958AD}|docker-compose.dcproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1FCBE191-34FE-4B2E-8915-CA81553958AD}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C461394-ABDC-43CD-A798-71249C58BA67}|src\\Infrastructure\\Infrastructure.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\infrastructure\\data\\config\\catalogbrandconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C461394-ABDC-43CD-A798-71249C58BA67}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\data\\config\\catalogbrandconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\web\\key-768c1632-cf7b-41a9-bb7a-bff228ae8fba.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|solutionrelative:src\\web\\key-768c1632-cf7b-41a9-bb7a-bff228ae8fba.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\web\\slugifyparametertransformer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|solutionrelative:src\\web\\slugifyparametertransformer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7C461394-ABDC-43CD-A798-71249C58BA67}|src\\Infrastructure\\Infrastructure.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\infrastructure\\data\\catalogcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C461394-ABDC-43CD-A798-71249C58BA67}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\data\\catalogcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C461394-ABDC-43CD-A798-71249C58BA67}|src\\Infrastructure\\Infrastructure.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\infrastructure\\data\\catalogcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C461394-ABDC-43CD-A798-71249C58BA67}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\data\\catalogcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C461394-ABDC-43CD-A798-71249C58BA67}|src\\Infrastructure\\Infrastructure.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\infrastructure\\data\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C461394-ABDC-43CD-A798-71249C58BA67}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\data\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\applicationcore\\specifications\\catalogitemsspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|solutionrelative:src\\applicationcore\\specifications\\catalogitemsspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{757E99E6-1F45-AAD9-A18A-6C0B55B1EF56}|ProductCatalogMS\\ProductCatalogMS.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\productcatalogms\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{757E99E6-1F45-AAD9-A18A-6C0B55B1EF56}|ProductCatalogMS\\ProductCatalogMS.csproj|solutionrelative:productcatalogms\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\applicationcore\\specifications\\catalogfilterspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|solutionrelative:src\\applicationcore\\specifications\\catalogfilterspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{757E99E6-1F45-AAD9-A18A-6C0B55B1EF56}|ProductCatalogMS\\ProductCatalogMS.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\productcatalogms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757E99E6-1F45-AAD9-A18A-6C0B55B1EF56}|ProductCatalogMS\\ProductCatalogMS.csproj|solutionrelative:productcatalogms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\applicationcore\\specifications\\catalogitemnamespecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|solutionrelative:src\\applicationcore\\specifications\\catalogitemnamespecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{757E99E6-1F45-AAD9-A18A-6C0B55B1EF56}|ProductCatalogMS\\ProductCatalogMS.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\productcatalogms\\entities\\catalogitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757E99E6-1F45-AAD9-A18A-6C0B55B1EF56}|ProductCatalogMS\\ProductCatalogMS.csproj|solutionrelative:productcatalogms\\entities\\catalogitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\applicationcore\\specifications\\catalogfilterpaginatedspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|solutionrelative:src\\applicationcore\\specifications\\catalogfilterpaginatedspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{757E99E6-1F45-AAD9-A18A-6C0B55B1EF56}|ProductCatalogMS\\ProductCatalogMS.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\productcatalogms\\controllers\\catalogitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757E99E6-1F45-AAD9-A18A-6C0B55B1EF56}|ProductCatalogMS\\ProductCatalogMS.csproj|solutionrelative:productcatalogms\\controllers\\catalogitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93E29851-0CFF-4631-A4CD-52129DABB1D2}|..\\ProductCatalogMS\\ProductCatalogMS.csproj|c:\\users\\stamm\\documents\\github\\productcatalogms\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93E29851-0CFF-4631-A4CD-52129DABB1D2}|..\\ProductCatalogMS\\ProductCatalogMS.csproj|c:\\users\\stamm\\documents\\github\\productcatalogms\\entities\\catalogtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|solutionrelative:src\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{227CF035-29B0-448D-97E4-944F9EA850E5}|src\\Web\\Web.csproj|solutionrelative:src\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\applicationcore\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|solutionrelative:src\\applicationcore\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Controllers\\ProductsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProductCatalogMS\\Controllers\\ProductsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\src\\applicationcore\\exceptions\\basketnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FED7440-2311-4D1E-958B-3E887C585CD2}|src\\ApplicationCore\\ApplicationCore.csproj|solutionrelative:src\\applicationcore\\exceptions\\basketnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\APIClients\\CatalogApiClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ApplicationCore\\APIClients\\CatalogApiClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Interfaces\\ICatalogItemService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Services\\ProductCatalogService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Models\\CatalogItemDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Interfaces\\IAggregateRoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Models\\ProductDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Controllers\\ProductsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Services\\ProductCatalogService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProductCatalogMS\\Services\\ProductCatalogService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Data\\CatalogContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProductCatalogMS\\Data\\CatalogContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProductCatalogMS\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{757E99E6-1F45-AAD9-A18A-6C0B55B1EF56}|ProductCatalogMS\\ProductCatalogMS.csproj|c:\\users\\stamm\\documents\\github\\eshoponweb-project\\productcatalogms\\controllers\\catalogbrandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757E99E6-1F45-AAD9-A18A-6C0B55B1EF56}|ProductCatalogMS\\ProductCatalogMS.csproj|solutionrelative:productcatalogms\\controllers\\catalogbrandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -213,658 +130,379 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "..\\ProductCatalogMS\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Properties\\launchSettings.json",
-              "RelativeToolTip": "..\\ProductCatalogMS\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-02T08:04:36.85Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CatalogItemGetByIdEndpoint.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\CatalogItemEndpoints\\CatalogItemGetByIdEndpoint.cs",
-              "RelativeDocumentMoniker": "src\\PublicApi\\CatalogItemEndpoints\\CatalogItemGetByIdEndpoint.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\CatalogItemEndpoints\\CatalogItemGetByIdEndpoint.cs",
-              "RelativeToolTip": "src\\PublicApi\\CatalogItemEndpoints\\CatalogItemGetByIdEndpoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T12:18:29.96Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CatalogBrandListEndpoint.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\CatalogBrandEndpoints\\CatalogBrandListEndpoint.cs",
-              "RelativeDocumentMoniker": "src\\PublicApi\\CatalogBrandEndpoints\\CatalogBrandListEndpoint.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\CatalogBrandEndpoints\\CatalogBrandListEndpoint.cs",
-              "RelativeToolTip": "src\\PublicApi\\CatalogBrandEndpoints\\CatalogBrandListEndpoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:31:18.547Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ProductCatalogMS.csproj",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\ProductCatalogMS.csproj",
-              "RelativeDocumentMoniker": "..\\ProductCatalogMS\\ProductCatalogMS.csproj",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\ProductCatalogMS.csproj",
-              "RelativeToolTip": "..\\ProductCatalogMS\\ProductCatalogMS.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-01T11:30:49.998Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Checkout.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Pages\\Basket\\Checkout.cshtml.cs",
-              "RelativeDocumentMoniker": "src\\Web\\Pages\\Basket\\Checkout.cshtml.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Pages\\Basket\\Checkout.cshtml.cs",
-              "RelativeToolTip": "src\\Web\\Pages\\Basket\\Checkout.cshtml.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAnwDgAAACEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:28:16.048Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CatalogBrandController.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Controllers\\CatalogBrandController.cs",
-              "RelativeDocumentMoniker": "..\\ProductCatalogMS\\Controllers\\CatalogBrandController.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Controllers\\CatalogBrandController.cs",
-              "RelativeToolTip": "..\\ProductCatalogMS\\Controllers\\CatalogBrandController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T10:19:28.658Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CatalogItemController.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Controllers\\CatalogItemController.cs",
-              "RelativeDocumentMoniker": "..\\ProductCatalogMS\\Controllers\\CatalogItemController.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Controllers\\CatalogItemController.cs",
-              "RelativeToolTip": "..\\ProductCatalogMS\\Controllers\\CatalogItemController.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAuwMkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T10:18:59.784Z"
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CatalogTypeController.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Controllers\\CatalogTypeController.cs",
-              "RelativeDocumentMoniker": "..\\ProductCatalogMS\\Controllers\\CatalogTypeController.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Controllers\\CatalogTypeController.cs",
-              "RelativeToolTip": "..\\ProductCatalogMS\\Controllers\\CatalogTypeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T10:19:39.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DeleteCatalogItemEndpoint.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\CatalogItemEndpoints\\DeleteCatalogItemEndpoint.cs",
-              "RelativeDocumentMoniker": "src\\PublicApi\\CatalogItemEndpoints\\DeleteCatalogItemEndpoint.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\CatalogItemEndpoints\\DeleteCatalogItemEndpoint.cs",
-              "RelativeToolTip": "src\\PublicApi\\CatalogItemEndpoints\\DeleteCatalogItemEndpoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T12:24:08.57Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UpdateCatalogItemEndpoint.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\CatalogItemEndpoints\\UpdateCatalogItemEndpoint.cs",
-              "RelativeDocumentMoniker": "src\\PublicApi\\CatalogItemEndpoints\\UpdateCatalogItemEndpoint.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\CatalogItemEndpoints\\UpdateCatalogItemEndpoint.cs",
-              "RelativeToolTip": "src\\PublicApi\\CatalogItemEndpoints\\UpdateCatalogItemEndpoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T12:29:10.173Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\appsettings.json",
-              "RelativeDocumentMoniker": "..\\ProductCatalogMS\\appsettings.json",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\appsettings.json",
-              "RelativeToolTip": "..\\ProductCatalogMS\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-02T08:04:25.135Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CatalogServiceClient.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\HttpClients\\CatalogServiceClient.cs",
-              "RelativeDocumentMoniker": "src\\ApplicationCore\\HttpClients\\CatalogServiceClient.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\HttpClients\\CatalogServiceClient.cs",
-              "RelativeToolTip": "src\\ApplicationCore\\HttpClients\\CatalogServiceClient.cs",
-              "ViewState": "AgIAAMkAAAAAAAAAAAAYwAUBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T10:56:49.205Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Program.cs",
-              "RelativeDocumentMoniker": "..\\ProductCatalogMS\\Program.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Program.cs",
-              "RelativeToolTip": "..\\ProductCatalogMS\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T09:58:56.455Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CatalogTypeListEndpoint.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\CatalogTypeEndpoints\\CatalogTypeListEndpoint.cs",
-              "RelativeDocumentMoniker": "src\\PublicApi\\CatalogTypeEndpoints\\CatalogTypeListEndpoint.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\CatalogTypeEndpoints\\CatalogTypeListEndpoint.cs",
-              "RelativeToolTip": "src\\PublicApi\\CatalogTypeEndpoints\\CatalogTypeListEndpoint.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T12:30:56.758Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "src\\PublicApi\\MappingProfile.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\MappingProfile.cs",
-              "RelativeToolTip": "src\\PublicApi\\MappingProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T12:32:18.738Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CatalogItemListPagedEndpoint.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\CatalogItemEndpoints\\CatalogItemListPagedEndpoint.cs",
-              "RelativeDocumentMoniker": "src\\PublicApi\\CatalogItemEndpoints\\CatalogItemListPagedEndpoint.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\CatalogItemEndpoints\\CatalogItemListPagedEndpoint.cs",
-              "RelativeToolTip": "src\\PublicApi\\CatalogItemEndpoints\\CatalogItemListPagedEndpoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T12:19:26.848Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CreateCatalogItemEndpoint.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\CatalogItemEndpoints\\CreateCatalogItemEndpoint.cs",
-              "RelativeDocumentMoniker": "src\\PublicApi\\CatalogItemEndpoints\\CreateCatalogItemEndpoint.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\CatalogItemEndpoints\\CreateCatalogItemEndpoint.cs",
-              "RelativeToolTip": "src\\PublicApi\\CatalogItemEndpoints\\CreateCatalogItemEndpoint.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAYwEoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T12:20:38.759Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Pages\\Basket\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "src\\Web\\Pages\\Basket\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Pages\\Basket\\Index.cshtml.cs",
-              "RelativeToolTip": "src\\Web\\Pages\\Basket\\Index.cshtml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAYwGUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:06:43.503Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "BasketViewModelService.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Services\\BasketViewModelService.cs",
-              "RelativeDocumentMoniker": "src\\Web\\Services\\BasketViewModelService.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Services\\BasketViewModelService.cs",
-              "RelativeToolTip": "src\\Web\\Services\\BasketViewModelService.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAYwGoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:06:59.543Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CatalogItemViewModelService.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Services\\CatalogItemViewModelService.cs",
-              "RelativeDocumentMoniker": "src\\Web\\Services\\CatalogItemViewModelService.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Services\\CatalogItemViewModelService.cs",
-              "RelativeToolTip": "src\\Web\\Services\\CatalogItemViewModelService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:07:04.833Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CatalogViewModelService.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Services\\CatalogViewModelService.cs",
-              "RelativeDocumentMoniker": "src\\Web\\Services\\CatalogViewModelService.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Services\\CatalogViewModelService.cs",
-              "RelativeToolTip": "src\\Web\\Services\\CatalogViewModelService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:07:10.105Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PublicApi.csproj",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\PublicApi.csproj",
-              "RelativeDocumentMoniker": "src\\PublicApi\\PublicApi.csproj",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\PublicApi.csproj",
-              "RelativeToolTip": "src\\PublicApi\\PublicApi.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-01T11:06:40.889Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MicroserviceCatalogViewModelService.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Services\\MicroserviceCatalogViewModelService.cs",
-              "RelativeDocumentMoniker": "src\\Web\\Services\\MicroserviceCatalogViewModelService.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Services\\MicroserviceCatalogViewModelService.cs",
-              "RelativeToolTip": "src\\Web\\Services\\MicroserviceCatalogViewModelService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T10:57:48.421Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\Services\\OrderService.cs",
-              "RelativeDocumentMoniker": "src\\ApplicationCore\\Services\\OrderService.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\Services\\OrderService.cs",
-              "RelativeToolTip": "src\\ApplicationCore\\Services\\OrderService.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAYwEAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:01:37.642Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "CatalogItemConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Infrastructure\\Data\\Config\\CatalogItemConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Data\\Config\\CatalogItemConfiguration.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Infrastructure\\Data\\Config\\CatalogItemConfiguration.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Data\\Config\\CatalogItemConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:05:14.628Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "CatalogFilterPaginatedSpecification.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\UnitTests\\ApplicationCore\\Specifications\\CatalogFilterPaginatedSpecification.cs",
-              "RelativeDocumentMoniker": "tests\\UnitTests\\ApplicationCore\\Specifications\\CatalogFilterPaginatedSpecification.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\UnitTests\\ApplicationCore\\Specifications\\CatalogFilterPaginatedSpecification.cs",
-              "RelativeToolTip": "tests\\UnitTests\\ApplicationCore\\Specifications\\CatalogFilterPaginatedSpecification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:07:56.038Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "CatalogItemsSpecification.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\UnitTests\\ApplicationCore\\Specifications\\CatalogItemsSpecification.cs",
-              "RelativeDocumentMoniker": "tests\\UnitTests\\ApplicationCore\\Specifications\\CatalogItemsSpecification.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\UnitTests\\ApplicationCore\\Specifications\\CatalogItemsSpecification.cs",
-              "RelativeToolTip": "tests\\UnitTests\\ApplicationCore\\Specifications\\CatalogItemsSpecification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:07:27.262Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "CatalogFilterSpecification.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\UnitTests\\ApplicationCore\\Specifications\\CatalogFilterSpecification.cs",
-              "RelativeDocumentMoniker": "tests\\UnitTests\\ApplicationCore\\Specifications\\CatalogFilterSpecification.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\UnitTests\\ApplicationCore\\Specifications\\CatalogFilterSpecification.cs",
-              "RelativeToolTip": "tests\\UnitTests\\ApplicationCore\\Specifications\\CatalogFilterSpecification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:07:15.615Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "CatalogTypeConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Infrastructure\\Data\\Config\\CatalogTypeConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Data\\Config\\CatalogTypeConfiguration.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Infrastructure\\Data\\Config\\CatalogTypeConfiguration.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Data\\Config\\CatalogTypeConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:06:32.78Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "CatalogBrandConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Infrastructure\\Data\\Config\\CatalogBrandConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Data\\Config\\CatalogBrandConfiguration.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Infrastructure\\Data\\Config\\CatalogBrandConfiguration.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Data\\Config\\CatalogBrandConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:05:07.189Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "CatalogContextSeed.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Infrastructure\\Data\\CatalogContextSeed.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Data\\CatalogContextSeed.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Infrastructure\\Data\\CatalogContextSeed.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Data\\CatalogContextSeed.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAnwDwAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:04:58.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "CatalogContext.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Infrastructure\\Data\\CatalogContext.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Data\\CatalogContext.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Infrastructure\\Data\\CatalogContext.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Data\\CatalogContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:04:21.693Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "CatalogItemsSpecification.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\Specifications\\CatalogItemsSpecification.cs",
-              "RelativeDocumentMoniker": "src\\ApplicationCore\\Specifications\\CatalogItemsSpecification.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\Specifications\\CatalogItemsSpecification.cs",
-              "RelativeToolTip": "src\\ApplicationCore\\Specifications\\CatalogItemsSpecification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:02:27.623Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "CatalogFilterSpecification.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\Specifications\\CatalogFilterSpecification.cs",
-              "RelativeDocumentMoniker": "src\\ApplicationCore\\Specifications\\CatalogFilterSpecification.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\Specifications\\CatalogFilterSpecification.cs",
-              "RelativeToolTip": "src\\ApplicationCore\\Specifications\\CatalogFilterSpecification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:02:18.612Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "CatalogBrand.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Entities\\CatalogBrand.cs",
-              "RelativeDocumentMoniker": "..\\ProductCatalogMS\\Entities\\CatalogBrand.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Entities\\CatalogBrand.cs",
-              "RelativeToolTip": "..\\ProductCatalogMS\\Entities\\CatalogBrand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T10:35:21.815Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "CatalogItem.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Entities\\CatalogItem.cs",
-              "RelativeDocumentMoniker": "..\\ProductCatalogMS\\Entities\\CatalogItem.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Entities\\CatalogItem.cs",
-              "RelativeToolTip": "..\\ProductCatalogMS\\Entities\\CatalogItem.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAYwE0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T10:35:52.888Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "CatalogItemNameSpecification.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\Specifications\\CatalogItemNameSpecification.cs",
-              "RelativeDocumentMoniker": "src\\ApplicationCore\\Specifications\\CatalogItemNameSpecification.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\Specifications\\CatalogItemNameSpecification.cs",
-              "RelativeToolTip": "src\\ApplicationCore\\Specifications\\CatalogItemNameSpecification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:02:06.726Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
               "Title": "CatalogFilterPaginatedSpecification.cs",
               "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\Specifications\\CatalogFilterPaginatedSpecification.cs",
               "RelativeDocumentMoniker": "src\\ApplicationCore\\Specifications\\CatalogFilterPaginatedSpecification.cs",
               "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\Specifications\\CatalogFilterPaginatedSpecification.cs",
               "RelativeToolTip": "src\\ApplicationCore\\Specifications\\CatalogFilterPaginatedSpecification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:01:56.891Z"
+              "WhenOpened": "2025-10-23T10:41:51.685Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\Web\\appsettings.json",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\appsettings.json",
-              "RelativeToolTip": "src\\Web\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-01T10:58:42.987Z"
+              "DocumentIndex": 1,
+              "Title": "FunctionalTests",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\FunctionalTests\\FunctionalTests.csproj",
+              "RelativeDocumentMoniker": "tests\\FunctionalTests\\FunctionalTests.csproj",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\FunctionalTests\\FunctionalTests.csproj",
+              "RelativeToolTip": "tests\\FunctionalTests\\FunctionalTests.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-23T10:14:01.95Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Program.cs",
-              "RelativeDocumentMoniker": "src\\Web\\Program.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Program.cs",
-              "RelativeToolTip": "src\\Web\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAABcAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Web",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Web.csproj",
+              "RelativeDocumentMoniker": "src\\Web\\Web.csproj",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Web.csproj",
+              "RelativeToolTip": "src\\Web\\Web.csproj",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAewDwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-23T10:13:49.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductCatalogMS",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\ProductCatalogMS.csproj",
+              "RelativeDocumentMoniker": "ProductCatalogMS\\ProductCatalogMS.csproj",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\ProductCatalogMS.csproj",
+              "RelativeToolTip": "ProductCatalogMS\\ProductCatalogMS.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-23T10:12:59.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PublicApi",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\PublicApi.csproj",
+              "RelativeDocumentMoniker": "src\\PublicApi\\PublicApi.csproj",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\PublicApi.csproj",
+              "RelativeToolTip": "src\\PublicApi\\PublicApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-23T10:10:20.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Infrastructure",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Infrastructure\\Infrastructure.csproj",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Infrastructure\\Infrastructure.csproj",
+              "RelativeToolTip": "src\\Infrastructure\\Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-23T10:10:14.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationCore",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\ApplicationCore.csproj",
+              "RelativeDocumentMoniker": "src\\ApplicationCore\\ApplicationCore.csproj",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\ApplicationCore.csproj",
+              "RelativeToolTip": "src\\ApplicationCore\\ApplicationCore.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-23T10:10:02.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DeleteCatalogItemEndpointTest.cs",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\PublicApiIntegrationTests\\CatalogItemEndpoints\\DeleteCatalogItemEndpointTest.cs",
+              "RelativeDocumentMoniker": "tests\\PublicApiIntegrationTests\\CatalogItemEndpoints\\DeleteCatalogItemEndpointTest.cs",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\PublicApiIntegrationTests\\CatalogItemEndpoints\\DeleteCatalogItemEndpointTest.cs",
+              "RelativeToolTip": "tests\\PublicApiIntegrationTests\\CatalogItemEndpoints\\DeleteCatalogItemEndpointTest.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwCQAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T10:47:12.535Z"
+              "WhenOpened": "2025-10-23T10:05:43.837Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Entities\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "..\\ProductCatalogMS\\Entities\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Entities\\BaseEntity.cs",
-              "RelativeToolTip": "..\\ProductCatalogMS\\Entities\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "CatalogControllerIndex.cs",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\FunctionalTests\\Web\\Controllers\\CatalogControllerIndex.cs",
+              "RelativeDocumentMoniker": "tests\\FunctionalTests\\Web\\Controllers\\CatalogControllerIndex.cs",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\FunctionalTests\\Web\\Controllers\\CatalogControllerIndex.cs",
+              "RelativeToolTip": "tests\\FunctionalTests\\Web\\Controllers\\CatalogControllerIndex.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwBAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T10:37:42.258Z"
+              "WhenOpened": "2025-10-23T10:03:44.055Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "CatalogType.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Entities\\CatalogType.cs",
-              "RelativeDocumentMoniker": "..\\ProductCatalogMS\\Entities\\CatalogType.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Entities\\CatalogType.cs",
-              "RelativeToolTip": "..\\ProductCatalogMS\\Entities\\CatalogType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "BasketPageCheckout.cs",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\FunctionalTests\\Web\\Pages\\Basket\\BasketPageCheckout.cs",
+              "RelativeDocumentMoniker": "tests\\FunctionalTests\\Web\\Pages\\Basket\\BasketPageCheckout.cs",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\FunctionalTests\\Web\\Pages\\Basket\\BasketPageCheckout.cs",
+              "RelativeToolTip": "tests\\FunctionalTests\\Web\\Pages\\Basket\\BasketPageCheckout.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T10:35:56.518Z"
+              "WhenOpened": "2025-10-23T10:03:55.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\Entities\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "src\\ApplicationCore\\Entities\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\Entities\\BaseEntity.cs",
-              "RelativeToolTip": "src\\ApplicationCore\\Entities\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "CheckoutTest.cs",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\FunctionalTests\\Web\\Pages\\Basket\\CheckoutTest.cs",
+              "RelativeDocumentMoniker": "tests\\FunctionalTests\\Web\\Pages\\Basket\\CheckoutTest.cs",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\FunctionalTests\\Web\\Pages\\Basket\\CheckoutTest.cs",
+              "RelativeToolTip": "tests\\FunctionalTests\\Web\\Pages\\Basket\\CheckoutTest.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwBIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T10:37:29.199Z"
+              "WhenOpened": "2025-10-23T10:04:11.682Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "ProductCatalogMS\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "ProductCatalogMS\\Controllers\\ProductsController.cs",
+              "DocumentIndex": 11,
+              "Title": "CatalogItemListPagedEndpoint.cs",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\PublicApiIntegrationTests\\CatalogItemEndpoints\\CatalogItemListPagedEndpoint.cs",
+              "RelativeDocumentMoniker": "tests\\PublicApiIntegrationTests\\CatalogItemEndpoints\\CatalogItemListPagedEndpoint.cs",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\PublicApiIntegrationTests\\CatalogItemEndpoints\\CatalogItemListPagedEndpoint.cs",
+              "RelativeToolTip": "tests\\PublicApiIntegrationTests\\CatalogItemEndpoints\\CatalogItemListPagedEndpoint.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAADwv0cAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T10:13:09.58Z"
+              "WhenOpened": "2025-10-23T10:05:34.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "CatalogApiClient.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\APIClients\\CatalogApiClient.cs",
-              "RelativeDocumentMoniker": "src\\ApplicationCore\\APIClients\\CatalogApiClient.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\APIClients\\CatalogApiClient.cs",
-              "RelativeToolTip": "src\\ApplicationCore\\APIClients\\CatalogApiClient.cs",
+              "DocumentIndex": 12,
+              "Title": "CatalogItemGetByIdEndpointTest.cs",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\PublicApiIntegrationTests\\CatalogItemEndpoints\\CatalogItemGetByIdEndpointTest.cs",
+              "RelativeDocumentMoniker": "tests\\PublicApiIntegrationTests\\CatalogItemEndpoints\\CatalogItemGetByIdEndpointTest.cs",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\PublicApiIntegrationTests\\CatalogItemEndpoints\\CatalogItemGetByIdEndpointTest.cs",
+              "RelativeToolTip": "tests\\PublicApiIntegrationTests\\CatalogItemEndpoints\\CatalogItemGetByIdEndpointTest.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAswB4AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T10:45:33.897Z"
+              "WhenOpened": "2025-10-23T10:05:23.945Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 13,
+              "Title": "CreateCatalogItemEndpointTest.cs",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\PublicApiIntegrationTests\\CatalogItemEndpoints\\CreateCatalogItemEndpointTest.cs",
+              "RelativeDocumentMoniker": "tests\\PublicApiIntegrationTests\\CatalogItemEndpoints\\CreateCatalogItemEndpointTest.cs",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\PublicApiIntegrationTests\\CatalogItemEndpoints\\CreateCatalogItemEndpointTest.cs",
+              "RelativeToolTip": "tests\\PublicApiIntegrationTests\\CatalogItemEndpoints\\CreateCatalogItemEndpointTest.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:05:06.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthenticateEndpointTest.cs",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\PublicApiIntegrationTests\\AuthEndpoints\\AuthenticateEndpointTest.cs",
+              "RelativeDocumentMoniker": "tests\\PublicApiIntegrationTests\\AuthEndpoints\\AuthenticateEndpointTest.cs",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\PublicApiIntegrationTests\\AuthEndpoints\\AuthenticateEndpointTest.cs",
+              "RelativeToolTip": "tests\\PublicApiIntegrationTests\\AuthEndpoints\\AuthenticateEndpointTest.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAD4vyAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:04:53.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomePageOnGet.cs",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\FunctionalTests\\Web\\Pages\\HomePageOnGet.cs",
+              "RelativeDocumentMoniker": "tests\\FunctionalTests\\Web\\Pages\\HomePageOnGet.cs",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\FunctionalTests\\Web\\Pages\\HomePageOnGet.cs",
+              "RelativeToolTip": "tests\\FunctionalTests\\Web\\Pages\\HomePageOnGet.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAMwBEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:04:39.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IndexTest.cs",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\FunctionalTests\\Web\\Pages\\Basket\\IndexTest.cs",
+              "RelativeDocumentMoniker": "tests\\FunctionalTests\\Web\\Pages\\Basket\\IndexTest.cs",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\FunctionalTests\\Web\\Pages\\Basket\\IndexTest.cs",
+              "RelativeToolTip": "tests\\FunctionalTests\\Web\\Pages\\Basket\\IndexTest.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAIwGEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:04:27.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CatalogFilterSpecification.cs",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\UnitTests\\ApplicationCore\\Specifications\\CatalogFilterSpecification.cs",
+              "RelativeDocumentMoniker": "tests\\UnitTests\\ApplicationCore\\Specifications\\CatalogFilterSpecification.cs",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\tests\\UnitTests\\ApplicationCore\\Specifications\\CatalogFilterSpecification.cs",
+              "RelativeToolTip": "tests\\UnitTests\\ApplicationCore\\Specifications\\CatalogFilterSpecification.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwCYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:01:49.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\PublicApi\\Dockerfile",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\PublicApi\\Dockerfile",
+              "RelativeToolTip": "src\\PublicApi\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-23T09:28:09.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Dockerfile",
+              "RelativeDocumentMoniker": "ProductCatalogMS\\Dockerfile",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Dockerfile",
+              "RelativeToolTip": "ProductCatalogMS\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-23T08:37:09.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Program.cs",
               "RelativeDocumentMoniker": "ProductCatalogMS\\Program.cs",
               "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Program.cs",
               "RelativeToolTip": "ProductCatalogMS\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T10:11:52.206Z"
+              "WhenOpened": "2025-10-23T08:28:00.863Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "ICatalogItemService.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Interfaces\\ICatalogItemService.cs",
-              "RelativeDocumentMoniker": "..\\ProductCatalogMS\\Interfaces\\ICatalogItemService.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Interfaces\\ICatalogItemService.cs",
-              "RelativeToolTip": "..\\ProductCatalogMS\\Interfaces\\ICatalogItemService.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T10:39:50.895Z"
+              "DocumentIndex": 20,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-10-23T08:09:02.897Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "CatalogContext.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Data\\CatalogContext.cs",
-              "RelativeDocumentMoniker": "ProductCatalogMS\\Data\\CatalogContext.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Data\\CatalogContext.cs",
-              "RelativeToolTip": "ProductCatalogMS\\Data\\CatalogContext.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T10:12:42.598Z"
+              "DocumentIndex": 18,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\Web\\Dockerfile",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\Dockerfile",
+              "RelativeToolTip": "src\\Web\\Dockerfile",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-23T08:09:52.121Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "ProductCatalogService.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Services\\ProductCatalogService.cs",
-              "RelativeDocumentMoniker": "ProductCatalogMS\\Services\\ProductCatalogService.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Services\\ProductCatalogService.cs",
-              "RelativeToolTip": "ProductCatalogMS\\Services\\ProductCatalogService.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T10:12:56.259Z"
+              "DocumentIndex": 21,
+              "Title": "key-768c1632-cf7b-41a9-bb7a-bff228ae8fba.xml",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\key-768c1632-cf7b-41a9-bb7a-bff228ae8fba.xml",
+              "RelativeDocumentMoniker": "src\\Web\\key-768c1632-cf7b-41a9-bb7a-bff228ae8fba.xml",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\key-768c1632-cf7b-41a9-bb7a-bff228ae8fba.xml",
+              "RelativeToolTip": "src\\Web\\key-768c1632-cf7b-41a9-bb7a-bff228ae8fba.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-10-23T08:11:09.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "ProductCatalogService.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Services\\ProductCatalogService.cs",
-              "RelativeDocumentMoniker": "..\\ProductCatalogMS\\Services\\ProductCatalogService.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Services\\ProductCatalogService.cs",
-              "RelativeToolTip": "..\\ProductCatalogMS\\Services\\ProductCatalogService.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T09:58:29.934Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "CatalogItemDto.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Models\\CatalogItemDto.cs",
-              "RelativeDocumentMoniker": "..\\ProductCatalogMS\\Models\\CatalogItemDto.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Models\\CatalogItemDto.cs",
-              "RelativeToolTip": "..\\ProductCatalogMS\\Models\\CatalogItemDto.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T10:35:11.954Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "IAggregateRoot.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Interfaces\\IAggregateRoot.cs",
-              "RelativeDocumentMoniker": "..\\ProductCatalogMS\\Interfaces\\IAggregateRoot.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Interfaces\\IAggregateRoot.cs",
-              "RelativeToolTip": "..\\ProductCatalogMS\\Interfaces\\IAggregateRoot.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T10:37:10.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "ProductDto.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Models\\ProductDto.cs",
-              "RelativeDocumentMoniker": "..\\ProductCatalogMS\\Models\\ProductDto.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Models\\ProductDto.cs",
-              "RelativeToolTip": "..\\ProductCatalogMS\\Models\\ProductDto.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T10:00:14.88Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "..\\ProductCatalogMS\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\ProductCatalogMS\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "..\\ProductCatalogMS\\Controllers\\ProductsController.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T09:57:32.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "BasketNotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\Exceptions\\BasketNotFoundException.cs",
-              "RelativeDocumentMoniker": "src\\ApplicationCore\\Exceptions\\BasketNotFoundException.cs",
-              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\ApplicationCore\\Exceptions\\BasketNotFoundException.cs",
-              "RelativeToolTip": "src\\ApplicationCore\\Exceptions\\BasketNotFoundException.cs",
+              "DocumentIndex": 22,
+              "Title": "SlugifyParameterTransformer.cs",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\SlugifyParameterTransformer.cs",
+              "RelativeDocumentMoniker": "src\\Web\\SlugifyParameterTransformer.cs",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Web\\SlugifyParameterTransformer.cs",
+              "RelativeToolTip": "src\\Web\\SlugifyParameterTransformer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T08:14:24.143Z"
+              "WhenOpened": "2025-10-23T08:10:53.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CatalogItem.cs",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Entities\\CatalogItem.cs",
+              "RelativeDocumentMoniker": "ProductCatalogMS\\Entities\\CatalogItem.cs",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Entities\\CatalogItem.cs",
+              "RelativeToolTip": "ProductCatalogMS\\Entities\\CatalogItem.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwEwAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T09:37:29.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EfRepository.cs",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Infrastructure\\Data\\EfRepository.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\Data\\EfRepository.cs",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Infrastructure\\Data\\EfRepository.cs",
+              "RelativeToolTip": "src\\Infrastructure\\Data\\EfRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:19:46.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CatalogContextSeed.cs",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Infrastructure\\Data\\CatalogContextSeed.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\Data\\CatalogContextSeed.cs",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\src\\Infrastructure\\Data\\CatalogContextSeed.cs",
+              "RelativeToolTip": "src\\Infrastructure\\Data\\CatalogContextSeed.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAgwF4AAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:15:41.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CatalogItemController.cs",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Controllers\\CatalogItemController.cs",
+              "RelativeDocumentMoniker": "ProductCatalogMS\\Controllers\\CatalogItemController.cs",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Controllers\\CatalogItemController.cs",
+              "RelativeToolTip": "ProductCatalogMS\\Controllers\\CatalogItemController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:14:49.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CatalogBrandController.cs",
+              "DocumentMoniker": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Controllers\\CatalogBrandController.cs",
+              "RelativeDocumentMoniker": "ProductCatalogMS\\Controllers\\CatalogBrandController.cs",
+              "ToolTip": "C:\\Users\\stamm\\Documents\\GitHub\\eShopOnWeb-project\\ProductCatalogMS\\Controllers\\CatalogBrandController.cs",
+              "RelativeToolTip": "ProductCatalogMS\\Controllers\\CatalogBrandController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:14:47.551Z"
             }
           ]
         }

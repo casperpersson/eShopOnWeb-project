@@ -1,1 +1,0 @@
-C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\src\BlazorAdmin\obj\Debug\net8.0\staticwebassets.build.json
