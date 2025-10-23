@@ -21,10 +21,10 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore eShopOnWeb.sln
       working-directory: ./Main
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build eShopOnWeb.sln --no-restore
       working-directory: ./Main
       
     - name: Test
