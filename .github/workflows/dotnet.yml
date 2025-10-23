@@ -29,4 +29,4 @@ jobs:
       
     - name: Test
       run: dotnet test --no-build --verbosity normal
-      working-directory: ./tests
+      working-directory: ./Main
