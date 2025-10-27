@@ -1,3 +1,7 @@
+using BlazorShared.Entities;
+using BasketMS.Interfaces;
+using BasketMS.Repository;
+using BasketMS.Services;
 
 namespace BasketMS
 {
@@ -13,6 +17,10 @@ namespace BasketMS
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            //builder.Services.AddScoped<IAppLogger<BasketService>, AppLogger<BasketService>>();
+            builder.Services.AddScoped<IRepository<Basket>, BasketRepository>();
+            builder.Services.AddScoped<IBasketService, BasketService>();
+            
 
             var app = builder.Build();
 

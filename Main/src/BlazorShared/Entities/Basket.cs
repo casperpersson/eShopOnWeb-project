@@ -1,23 +1,17 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Ardalis.GuardClauses;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
+using BlazorShared.Interfaces;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+namespace BlazorShared.Entities;
 
-public class Basket : BaseEntity, IAggregateRoot
+public class Basket(string buyerId) : BaseEntity, IAggregateRoot
 {
-    public string BuyerId { get; private set; }
+    public string BuyerId { get; private set; } = buyerId;
     private readonly List<BasketItem> _items = new List<BasketItem>();
     public IReadOnlyCollection<BasketItem> Items => _items.AsReadOnly();
 
     public int TotalItems => _items.Sum(i => i.Quantity);
-
-
-    public Basket(string buyerId)
-    {
-        BuyerId = buyerId;
-    }
 
     public void AddItem(int catalogItemId, decimal unitPrice, int quantity = 1)
     {

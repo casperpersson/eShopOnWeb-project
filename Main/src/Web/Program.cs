@@ -51,6 +51,11 @@ builder.Services.AddHttpClient<CatalogServiceClient>(client =>
     client.BaseAddress = new Uri(builder.Configuration["CatalogMicroserviceUrl"] ?? "https://localhost:7001/");
     client.Timeout = TimeSpan.FromSeconds(30);
 });
+builder.Services.AddHttpClient<BasketServiceClient>(client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["BasketMicroserviceUrl"] ?? "https://localhost:7081/");
+    client.Timeout = TimeSpan.FromSeconds(30);
+});
 builder.Services.AddScoped<ICatalogViewModelService, MicroserviceCatalogViewModelService>();
 
 

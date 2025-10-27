@@ -1,12 +1,15 @@
 ﻿using Ardalis.Specification;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+using BlazorShared.Entities;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Specifications;
+namespace BasketMS.Specifications;
 
 public sealed class BasketWithItemsSpecification : Specification<Basket>
 {
+    public int? BasketId { get; }
+    public string? BuyerId { get; }
     public BasketWithItemsSpecification(int basketId)
     {
+        BasketId = basketId;
         Query
             .Where(b => b.Id == basketId)
             .Include(b => b.Items);
@@ -14,6 +17,7 @@ public sealed class BasketWithItemsSpecification : Specification<Basket>
 
     public BasketWithItemsSpecification(string buyerId)
     {
+        buyerId = BuyerId;
         Query
             .Where(b => b.BuyerId == buyerId)
             .Include(b => b.Items);

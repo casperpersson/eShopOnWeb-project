@@ -10,15 +10,15 @@ namespace Microsoft.eShopWeb.Web.Pages.Basket;
 
 public class IndexModel : PageModel
 {
-    private readonly IBasketService _basketService;
+    private readonly BasketServiceClient _basketService;
     private readonly IBasketViewModelService _basketViewModelService;
     private readonly CatalogServiceClient _catalogServiceClient;
 
-    public IndexModel(IBasketService basketService,
+    public IndexModel(BasketServiceClient basketServiceClient,
         IBasketViewModelService basketViewModelService,
         CatalogServiceClient catalogServiceClient)
     {
-        _basketService = basketService;
+        _basketService = basketServiceClient;
         _basketViewModelService = basketViewModelService;
         _catalogServiceClient = catalogServiceClient;
     }
@@ -45,7 +45,7 @@ public class IndexModel : PageModel
         }
 
         var username = GetOrSetBasketCookieAndUserName();
-        var basket = await _basketService.AddItemToBasket(username,
+        var basket = await _basketService.AddItemToBasketAsync(username,
             productDetails.Id, item.Price);
 
         BasketModel = await _basketViewModelService.Map(basket);
@@ -62,7 +62,7 @@ public class IndexModel : PageModel
 
         var basketView = await _basketViewModelService.GetOrCreateBasketForUser(GetOrSetBasketCookieAndUserName());
         var updateModel = items.ToDictionary(b => b.Id.ToString(), b => b.Quantity);
-        var basket = await _basketService.SetQuantities(basketView.Id, updateModel);
+        var basket = await _basketService.SetQuantitiesAsync(basketView.Id, updateModel);
         BasketModel = await _basketViewModelService.Map(basket);
     }
 

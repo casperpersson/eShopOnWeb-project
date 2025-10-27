@@ -1,26 +1,37 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Ardalis.GuardClauses;
-using Ardalis.Result;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Specifications;
+using BlazorShared.Entities;
+using BasketMS.Interfaces;
+using BasketMS.Specifications;
+using BasketMS.Repository;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Services;
+namespace BasketMS.Services;
 
 public class BasketService : IBasketService
 {
     private readonly IRepository<Basket> _basketRepository;
-    private readonly IAppLogger<BasketService> _logger;
 
-    public BasketService(IRepository<Basket> basketRepository,
-        IAppLogger<BasketService> logger)
+    public BasketService(IRepository<Basket> basketRepository)
     {
         _basketRepository = basketRepository;
-        _logger = logger;
     }
 
-    public async Task<Basket> AddItemToBasket(string username, int catalogItemId, decimal price, int quantity = 1)
+    public async Task<Basket?> GetOrCreateBasketForUserAsync(string userName)
+    {
+        var basketSpec = new BasketWithItemsSpecification(userName);
+        var basket = await _basketRepository.FirstOrDefaultAsync(basketSpec);
+
+        if (basket == null)
+        {
+            basket = new Basket(userName);
+            await _basketRepository.AddAsync(basket);
+        }
+        return basket;
+    }
+
+    public async Task<Basket> AddItemToBasketAsync(string username, int catalogItemId, decimal price, int quantity = 1)
     {
         var basketSpec = new BasketWithItemsSpecification(username);
         var basket = await _basketRepository.FirstOrDefaultAsync(basketSpec);
@@ -37,30 +48,29 @@ public class BasketService : IBasketService
         return basket;
     }
 
-    public async Task DeleteBasketAsync(int basketId)
-    {
-        var basket = await _basketRepository.GetByIdAsync(basketId);
-        Guard.Against.Null(basket, nameof(basket));
-        await _basketRepository.DeleteAsync(basket);
-    }
-
-    public async Task<Result<Basket>> SetQuantities(int basketId, Dictionary<string, int> quantities)
+    public async Task<Basket> SetQuantitiesAsync(int basketId, Dictionary<string, int> quantities)
     {
         var basketSpec = new BasketWithItemsSpecification(basketId);
         var basket = await _basketRepository.FirstOrDefaultAsync(basketSpec);
-        if (basket == null) return Result<Basket>.NotFound();
+        Guard.Against.Null(basket, nameof(basket));
 
         foreach (var item in basket.Items)
         {
             if (quantities.TryGetValue(item.Id.ToString(), out var quantity))
             {
-                if (_logger != null) _logger.LogInformation($"Updating quantity of item ID:{item.Id} to {quantity}.");
                 item.SetQuantity(quantity);
             }
         }
         basket.RemoveEmptyItems();
         await _basketRepository.UpdateAsync(basket);
         return basket;
+    }
+
+    public async Task DeleteBasketAsync(int basketId)
+    {
+        var basket = await _basketRepository.GetByIdAsync(basketId);
+        Guard.Against.Null(basket, nameof(basket));
+        await _basketRepository.DeleteAsync(basket);
     }
 
     public async Task TransferBasketAsync(string anonymousId, string userName)
@@ -81,5 +91,12 @@ public class BasketService : IBasketService
         }
         await _basketRepository.UpdateAsync(userBasket);
         await _basketRepository.DeleteAsync(anonymousBasket);
+    }
+
+    public async Task<int> CountTotalBasketItemsAsync(string username)
+    {
+        var basketSpec = new BasketWithItemsSpecification(username);
+        var basket = await _basketRepository.FirstOrDefaultAsync(basketSpec);
+        return basket?.Items.Sum(i => i.Quantity) ?? 0;
     }
 }
