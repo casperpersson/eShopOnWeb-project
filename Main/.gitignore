@@ -3,6 +3,10 @@
 
 # User-specific files
 *.cache
+*.nuget.*
+*.dgspec.json
+*.g.props
+*.g.targets
 *.dll
 *.exe
 *.pdb
