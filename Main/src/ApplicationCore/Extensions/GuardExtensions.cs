@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+using BlazorShared.Entities;
 using Microsoft.eShopWeb.ApplicationCore.Exceptions;
 
 namespace Ardalis.GuardClauses;

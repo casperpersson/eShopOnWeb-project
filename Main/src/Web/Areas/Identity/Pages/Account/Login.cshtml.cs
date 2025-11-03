@@ -15,9 +15,9 @@ public class LoginModel : PageModel
 {
     private readonly SignInManager<ApplicationUser> _signInManager;
     private readonly ILogger<LoginModel> _logger;
-    private readonly IBasketService _basketService;
+    private readonly BasketServiceClient _basketService;
 
-    public LoginModel(SignInManager<ApplicationUser> signInManager, ILogger<LoginModel> logger, IBasketService basketService)
+    public LoginModel(SignInManager<ApplicationUser> signInManager, ILogger<LoginModel> logger, BasketServiceClient basketService)
     {
         _signInManager = signInManager;
         _logger = logger;

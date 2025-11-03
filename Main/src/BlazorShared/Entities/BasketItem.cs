@@ -1,6 +1,7 @@
 ﻿using Ardalis.GuardClauses;
+using System;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+namespace BlazorShared.Entities;
 
 public class BasketItem : BaseEntity
 {

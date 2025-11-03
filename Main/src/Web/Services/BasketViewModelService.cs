@@ -1,106 +1,82 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+﻿using Microsoft.eShopWeb.ApplicationCore.HttpClients;
 using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.HttpClients;
 using Microsoft.eShopWeb.Web.Interfaces;
-using Microsoft.eShopWeb.Web.ViewModels;
-using Microsoft.eShopWeb.ApplicationCore.Specifications;
 using Microsoft.eShopWeb.Web.Pages.Basket;
+using Microsoft.eShopWeb.Web.ViewModels;
+using BlazorShared.Entities;
 
 namespace Microsoft.eShopWeb.Web.Services;
 
 public class BasketViewModelService : IBasketViewModelService
 {
-    private readonly IRepository<Basket> _basketRepository;
-    private readonly IUriComposer _uriComposer;
-    private readonly IBasketQueryService _basketQueryService;
+    private readonly BasketServiceClient _basketServiceClient;
     private readonly CatalogServiceClient _catalogServiceClient;
+    private readonly IUriComposer _uriComposer;
 
-    public BasketViewModelService(IRepository<Basket> basketRepository,
+    public BasketViewModelService(
+        BasketServiceClient basketServiceClient,
         CatalogServiceClient catalogServiceClient,
-        IUriComposer uriComposer,
-        IBasketQueryService basketQueryService)
+        IUriComposer uriComposer)
     {
-        _basketRepository = basketRepository;
-        _uriComposer = uriComposer;
-        _basketQueryService = basketQueryService;
+        _basketServiceClient = basketServiceClient;
         _catalogServiceClient = catalogServiceClient;
+        _uriComposer = uriComposer;
     }
 
     public async Task<BasketViewModel> GetOrCreateBasketForUser(string userName)
     {
-        var basketSpec = new BasketWithItemsSpecification(userName);
-        var basket = (await _basketRepository.FirstOrDefaultAsync(basketSpec));
-
-        if (basket == null)
-        {
-            return await CreateBasketForUser(userName);
-        }
-        var viewModel = await Map(basket);
-        return viewModel;
+        var basket = await _basketServiceClient.GetOrCreateBasketForUserAsync(userName);
+        return await Map(basket);
     }
 
-    private async Task<BasketViewModel> CreateBasketForUser(string userId)
+    public async Task<BasketViewModel> AddItemToBasket(string userName, int catalogItemId, decimal price, int quantity = 1)
     {
-        var basket = new Basket(userId);
-        await _basketRepository.AddAsync(basket);
-
-        return new BasketViewModel()
-        {
-            BuyerId = basket.BuyerId,
-            Id = basket.Id,
-        };
+        var basket = await _basketServiceClient.AddItemToBasketAsync(userName, catalogItemId, price, quantity);
+        return await Map(basket);
     }
 
-    private async Task<List<BasketItemViewModel>> GetBasketItems(IReadOnlyCollection<BasketItem> basketItems)
+    public async Task<BasketViewModel> SetQuantities(string username, Dictionary<string, int> quantities)
     {
-        // Get catalog items from microservice instead of repository
-        var catalogItemIds = basketItems.Select(b => b.CatalogItemId).Distinct().ToList();
-        var catalogItems = new List<CatalogItemDto>();
+        var basket = await _basketServiceClient.SetQuantitiesAsync(username, quantities);
+        return await Map(basket);
+    }
 
-        foreach (var itemId in catalogItemIds)
-        {
-            var catalogItem = await _catalogServiceClient.GetCatalogItemByIdAsync(itemId);
-            if (catalogItem != null)
-            {
-                catalogItems.Add(catalogItem);
-            }
-        }
+    public async Task DeleteBasket(int basketId)
+    {
+        await _basketServiceClient.DeleteBasketAsync(basketId);
+    }
 
-        var items = basketItems.Select(basketItem =>
-        {
-            var catalogItem = catalogItems.First(c => c.Id == basketItem.CatalogItemId);
-
-            var basketItemViewModel = new BasketItemViewModel
-            {
-                Id = basketItem.Id,
-                UnitPrice = basketItem.UnitPrice,
-                Quantity = basketItem.Quantity,
-                CatalogItemId = basketItem.CatalogItemId,
-                PictureUrl = _uriComposer.ComposePicUri(catalogItem.PictureUri),
-                ProductName = catalogItem.Name
-            };
-            return basketItemViewModel;
-        }).ToList();
-
-        return items;
+    public async Task TransferBasket(string anonymousId, string userName)
+    {
+        await _basketServiceClient.TransferBasketAsync(anonymousId, userName);
     }
 
     public async Task<BasketViewModel> Map(Basket basket)
     {
-        return new BasketViewModel()
+        var items = new List<BasketItemViewModel>();
+        foreach (var item in basket.Items)
         {
-            BuyerId = basket.BuyerId,
+            var catalogItem = await _catalogServiceClient.GetCatalogItemByIdAsync(item.CatalogItemId);
+            items.Add(new BasketItemViewModel
+            {
+                Id = item.CatalogItemId,
+                CatalogItemId = item.CatalogItemId,
+                UnitPrice = item.UnitPrice,
+                Quantity = item.Quantity,
+                ProductName = catalogItem?.Name,
+                PictureUrl = _uriComposer.ComposePicUri(catalogItem?.PictureUri ?? "")
+            });
+        }
+        return new BasketViewModel
+        {
             Id = basket.Id,
-            Items = await GetBasketItems(basket.Items)
+            BuyerId = basket.BuyerId,
+            Items = items
         };
     }
 
     public async Task<int> CountTotalBasketItems(string username)
     {
-        var counter = await _basketQueryService.CountTotalBasketItems(username);
-
-        return counter;
+        return await _basketServiceClient.CountTotalBasketItemsAsync(username);
     }
 }
-
-

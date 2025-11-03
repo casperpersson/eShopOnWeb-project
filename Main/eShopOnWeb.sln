@@ -43,6 +43,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublicApiIntegrationTests",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCatalogMS", "..\ProductCatalogMS\ProductCatalogMS.csproj", "{265270CC-8923-6C38-8EBE-93AC912DDFC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasketMS", "..\BasketMS\BasketMS.csproj", "{9CDE77DD-387C-465C-B39B-0063B2E85164}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,10 @@ Global
 		{265270CC-8923-6C38-8EBE-93AC912DDFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{265270CC-8923-6C38-8EBE-93AC912DDFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{265270CC-8923-6C38-8EBE-93AC912DDFC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CDE77DD-387C-465C-B39B-0063B2E85164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CDE77DD-387C-465C-B39B-0063B2E85164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CDE77DD-387C-465C-B39B-0063B2E85164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CDE77DD-387C-465C-B39B-0063B2E85164}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

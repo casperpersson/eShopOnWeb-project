@@ -1,4 +1,5 @@
-﻿using Ardalis.Specification;
+﻿using BlazorShared.Interfaces;
+using Ardalis.Specification;
 
 namespace Microsoft.eShopWeb.ApplicationCore.Interfaces;
 

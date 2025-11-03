@@ -1,19 +1,17 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using Ardalis.GuardClauses;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
+using BlazorShared.Interfaces;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+namespace BlazorShared.Entities;
 
 public class Basket : BaseEntity, IAggregateRoot
 {
-    public string BuyerId { get; private set; }
-    private readonly List<BasketItem> _items = new List<BasketItem>();
-    public IReadOnlyCollection<BasketItem> Items => _items.AsReadOnly();
+    public string BuyerId { get; set; }
+    public List<BasketItem> Items { get; set; } = new();
 
-    public int TotalItems => _items.Sum(i => i.Quantity);
-
-
+    public int TotalItems => Items.Sum(i => i.Quantity);
     public Basket(string buyerId)
     {
         BuyerId = buyerId;
@@ -23,7 +21,7 @@ public class Basket : BaseEntity, IAggregateRoot
     {
         if (!Items.Any(i => i.CatalogItemId == catalogItemId))
         {
-            _items.Add(new BasketItem(catalogItemId, quantity, unitPrice));
+            Items.Add(new BasketItem(catalogItemId, quantity, unitPrice));
             return;
         }
         var existingItem = Items.First(i => i.CatalogItemId == catalogItemId);
@@ -32,7 +30,7 @@ public class Basket : BaseEntity, IAggregateRoot
 
     public void RemoveEmptyItems()
     {
-        _items.RemoveAll(i => i.Quantity == 0);
+        Items.RemoveAll(i => i.Quantity == 0);
     }
 
     public void SetNewBuyerId(string buyerId)

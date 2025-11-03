@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "Hash": "KruOd+kXbpC0NS2WGuvl0Ji9A3Z9C+AP2B6DPJTsl40=",
+  "Source": "BasketMS",
+  "BasePath": "_content/BasketMS",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\grubb\\.nuget\\packages\\blazorinputfile\\0.2.0\\staticwebassets\\inputfile.js",
+      "SourceId": "BlazorInputFile",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\grubb\\.nuget\\packages\\blazorinputfile\\0.2.0\\staticwebassets\\",
+      "BasePath": "_content/BlazorInputFile",
+      "RelativePath": "inputfile.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a9b8hhc1oy",
+      "Integrity": "/n8hxridi+BE7KMcprL53dUE3gYZvzuPp3syUZ07ims=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\grubb\\.nuget\\packages\\blazorinputfile\\0.2.0\\staticwebassets\\inputfile.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "_content/BlazorInputFile/inputfile.js",
+      "AssetFile": "C:\\Users\\grubb\\.nuget\\packages\\blazorinputfile\\0.2.0\\staticwebassets\\inputfile.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9015"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/n8hxridi+BE7KMcprL53dUE3gYZvzuPp3syUZ07ims=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Apr 2020 12:24:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/n8hxridi+BE7KMcprL53dUE3gYZvzuPp3syUZ07ims="
+        }
+      ]
+    }
+  ]
+}

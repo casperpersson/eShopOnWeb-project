@@ -21,6 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\BasketMS\BasketMS.csproj" />
+    <ProjectReference Include="..\..\..\ProductCatalogMS\ProductCatalogMS.csproj" />
+    <ProjectReference Include="..\..\src\BlazorShared\BlazorShared.csproj" />
     <ProjectReference Include="..\..\src\Infrastructure\Infrastructure.csproj" />
     <ProjectReference Include="..\UnitTests\UnitTests.csproj" />
   </ItemGroup>

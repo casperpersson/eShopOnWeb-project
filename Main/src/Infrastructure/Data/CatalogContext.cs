@@ -1,7 +1,8 @@
 ﻿using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+using BlazorShared.Interfaces;
+using BlazorShared.Entities;
 using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
 using ProductCatalogMS.Entities;
 
