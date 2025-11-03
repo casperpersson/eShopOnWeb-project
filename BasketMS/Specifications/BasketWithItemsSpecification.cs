@@ -17,7 +17,7 @@ public sealed class BasketWithItemsSpecification : Specification<Basket>
 
     public BasketWithItemsSpecification(string buyerId)
     {
-        buyerId = BuyerId;
+        BuyerId = buyerId;
         Query
             .Where(b => b.BuyerId == buyerId)
             .Include(b => b.Items);

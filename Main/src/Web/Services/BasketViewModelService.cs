@@ -35,9 +35,9 @@ public class BasketViewModelService : IBasketViewModelService
         return await Map(basket);
     }
 
-    public async Task<BasketViewModel> SetQuantities(int basketId, Dictionary<string, int> quantities)
+    public async Task<BasketViewModel> SetQuantities(string username, Dictionary<string, int> quantities)
     {
-        var basket = await _basketServiceClient.SetQuantitiesAsync(basketId, quantities);
+        var basket = await _basketServiceClient.SetQuantitiesAsync(username, quantities);
         return await Map(basket);
     }
 
@@ -59,7 +59,7 @@ public class BasketViewModelService : IBasketViewModelService
             var catalogItem = await _catalogServiceClient.GetCatalogItemByIdAsync(item.CatalogItemId);
             items.Add(new BasketItemViewModel
             {
-                Id = item.Id,
+                Id = item.CatalogItemId,
                 CatalogItemId = item.CatalogItemId,
                 UnitPrice = item.UnitPrice,
                 Quantity = item.Quantity,

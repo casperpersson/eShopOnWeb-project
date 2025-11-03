@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2InBEjc5keg=",
+  "dgSpecHash": "WY0eTK0bgOE=",
   "success": true,
   "projectFilePath": "C:\\Skrivebord\\Studie\\Software PBA\\2. Sem\\eShopOnWeb-project\\BasketMS\\BasketMS.csproj",
   "expectedPackageFiles": [
@@ -19,17 +19,23 @@
     "C:\\Users\\grubb\\.nuget\\packages\\microsoft.aspnetcore.components.web\\3.1.0-preview3.19555.2\\microsoft.aspnetcore.components.web.3.1.0-preview3.19555.2.nupkg.sha512",
     "C:\\Users\\grubb\\.nuget\\packages\\microsoft.aspnetcore.metadata\\3.1.0-preview3.19555.2\\microsoft.aspnetcore.metadata.3.1.0-preview3.19555.2.nupkg.sha512",
     "C:\\Users\\grubb\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\grubb\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.10\\microsoft.extensions.caching.abstractions.9.0.10.nupkg.sha512",
+    "C:\\Users\\grubb\\.nuget\\packages\\microsoft.extensions.caching.stackexchangeredis\\9.0.10\\microsoft.extensions.caching.stackexchangeredis.9.0.10.nupkg.sha512",
     "C:\\Users\\grubb\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.0-preview3.19553.2\\microsoft.extensions.dependencyinjection.3.1.0-preview3.19553.2.nupkg.sha512",
-    "C:\\Users\\grubb\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.0-preview3.19553.2\\microsoft.extensions.dependencyinjection.abstractions.3.1.0-preview3.19553.2.nupkg.sha512",
-    "C:\\Users\\grubb\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.0-preview3.19553.2\\microsoft.extensions.logging.abstractions.3.1.0-preview3.19553.2.nupkg.sha512",
-    "C:\\Users\\grubb\\.nuget\\packages\\microsoft.extensions.options\\3.1.0-preview3.19553.2\\microsoft.extensions.options.3.1.0-preview3.19553.2.nupkg.sha512",
-    "C:\\Users\\grubb\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.0-preview3.19553.2\\microsoft.extensions.primitives.3.1.0-preview3.19553.2.nupkg.sha512",
+    "C:\\Users\\grubb\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.10\\microsoft.extensions.dependencyinjection.abstractions.9.0.10.nupkg.sha512",
+    "C:\\Users\\grubb\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.10\\microsoft.extensions.logging.abstractions.9.0.10.nupkg.sha512",
+    "C:\\Users\\grubb\\.nuget\\packages\\microsoft.extensions.options\\9.0.10\\microsoft.extensions.options.9.0.10.nupkg.sha512",
+    "C:\\Users\\grubb\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.10\\microsoft.extensions.primitives.9.0.10.nupkg.sha512",
     "C:\\Users\\grubb\\.nuget\\packages\\microsoft.jsinterop\\3.1.0-preview3.19553.2\\microsoft.jsinterop.3.1.0-preview3.19553.2.nupkg.sha512",
     "C:\\Users\\grubb\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
+    "C:\\Users\\grubb\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\grubb\\.nuget\\packages\\stackexchange.redis\\2.9.32\\stackexchange.redis.2.9.32.nupkg.sha512",
     "C:\\Users\\grubb\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
     "C:\\Users\\grubb\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
     "C:\\Users\\grubb\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
-    "C:\\Users\\grubb\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.6.2\\swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512"
+    "C:\\Users\\grubb\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.6.2\\swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
+    "C:\\Users\\grubb\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.10\\system.diagnostics.diagnosticsource.9.0.10.nupkg.sha512",
+    "C:\\Users\\grubb\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
   ],
   "logs": []
 }

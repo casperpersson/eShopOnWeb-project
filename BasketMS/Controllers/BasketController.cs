@@ -35,7 +35,7 @@ namespace BasketMS.Controllers
         [HttpPost("set-quantities")]
         public async Task<ActionResult<BasketDto>> SetQuantities([FromBody] SetQuantitiesDto dto)
         {
-            var basket = await _basketService.SetQuantitiesAsync(dto.BasketId, dto.Quantities);
+            var basket = await _basketService.SetQuantitiesAsync(dto.username, dto.Quantities);
             return Ok(basket);
         }
 
@@ -63,7 +63,7 @@ namespace BasketMS.Controllers
 
     // DTOs (should match those used in your client and service)
     public record AddItemDto(string Username, int CatalogItemId, decimal Price, int Quantity = 1);
-    public record SetQuantitiesDto(int BasketId, Dictionary<string, int> Quantities);
+    public record SetQuantitiesDto(string username, Dictionary<string, int> Quantities);
     public record TransferBasketDto(string AnonymousId, string UserName);
     public record BasketDto(int Id, string BuyerId, List<BasketItemDto> Items);
     public record BasketItemDto(int Id, int CatalogItemId, decimal UnitPrice, int Quantity);

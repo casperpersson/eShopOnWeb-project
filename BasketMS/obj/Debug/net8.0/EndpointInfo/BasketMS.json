@@ -307,9 +307,9 @@
       "SetQuantitiesDto": {
         "type": "object",
         "properties": {
-          "basketId": {
-            "type": "integer",
-            "format": "int32"
+          "username": {
+            "type": "string",
+            "nullable": true
           },
           "quantities": {
             "type": "object",

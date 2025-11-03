@@ -11,9 +11,9 @@ namespace BasketMS.Services;
 
 public class BasketService : IBasketService
 {
-    private readonly IRepository<Basket> _basketRepository;
+    private readonly BasketRepository _basketRepository;
 
-    public BasketService(IRepository<Basket> basketRepository)
+    public BasketService(BasketRepository basketRepository)
     {
         _basketRepository = basketRepository;
     }
@@ -48,15 +48,15 @@ public class BasketService : IBasketService
         return basket;
     }
 
-    public async Task<Basket> SetQuantitiesAsync(int basketId, Dictionary<string, int> quantities)
+    public async Task<Basket> SetQuantitiesAsync(string username, Dictionary<string, int> quantities)
     {
-        var basketSpec = new BasketWithItemsSpecification(basketId);
+        var basketSpec = new BasketWithItemsSpecification(username);
         var basket = await _basketRepository.FirstOrDefaultAsync(basketSpec);
         Guard.Against.Null(basket, nameof(basket));
 
         foreach (var item in basket.Items)
         {
-            if (quantities.TryGetValue(item.Id.ToString(), out var quantity))
+            if (quantities.TryGetValue(item.CatalogItemId.ToString(), out var quantity))
             {
                 item.SetQuantity(quantity);
             }

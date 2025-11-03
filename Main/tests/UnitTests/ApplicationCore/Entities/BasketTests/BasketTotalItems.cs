@@ -1,4 +1,5 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+﻿using BlazorShared.Interfaces;
+using BlazorShared.Entities;
 using Xunit;
 
 namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Entities.BasketTests;

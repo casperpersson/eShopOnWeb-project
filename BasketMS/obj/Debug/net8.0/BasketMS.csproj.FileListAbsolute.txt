@@ -45,3 +45,12 @@ C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\BasketMS\bin\Debug\n
 C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\BasketMS\bin\Debug\net8.0\FluentValidation.dll
 C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\BasketMS\bin\Debug\net8.0\BlazorShared.dll
 C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\BasketMS\bin\Debug\net8.0\BlazorShared.pdb
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\BasketMS\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\BasketMS\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\BasketMS\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\BasketMS\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\BasketMS\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\BasketMS\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\BasketMS\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\BasketMS\bin\Debug\net8.0\StackExchange.Redis.dll
+C:\Skrivebord\Studie\Software PBA\2. Sem\eShopOnWeb-project\BasketMS\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll

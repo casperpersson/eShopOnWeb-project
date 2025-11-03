@@ -28,6 +28,7 @@ public class IndexModel : PageModel
     public async Task OnGet()
     {
         BasketModel = await _basketViewModelService.GetOrCreateBasketForUser(GetOrSetBasketCookieAndUserName());
+        
     }
 
     public async Task<IActionResult> OnPost(CatalogItemViewModel productDetails)
@@ -62,8 +63,9 @@ public class IndexModel : PageModel
 
         var basketView = await _basketViewModelService.GetOrCreateBasketForUser(GetOrSetBasketCookieAndUserName());
         var updateModel = items.ToDictionary(b => b.Id.ToString(), b => b.Quantity);
-        var basket = await _basketService.SetQuantitiesAsync(basketView.Id, updateModel);
-        BasketModel = await _basketViewModelService.Map(basket);
+        var basket = await _basketService.SetQuantitiesAsync(basketView.BuyerId, updateModel);
+        BasketModel = await _basketViewModelService.GetOrCreateBasketForUser(GetOrSetBasketCookieAndUserName());
+
     }
 
     private string GetOrSetBasketCookieAndUserName()

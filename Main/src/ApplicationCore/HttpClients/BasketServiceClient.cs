@@ -28,9 +28,9 @@ public class BasketServiceClient
         return await response.Content.ReadFromJsonAsync<Basket>();
     }
 
-    public async Task<Basket> SetQuantitiesAsync(int basketId, Dictionary<string, int> quantities)
+    public async Task<Basket> SetQuantitiesAsync(string username, Dictionary<string, int> quantities)
     {
-        var dto = new SetQuantitiesDto(basketId, quantities);
+        var dto = new SetQuantitiesDto(username, quantities);
         var response = await _httpClient.PostAsJsonAsync("api/basket/set-quantities", dto);
         response.EnsureSuccessStatusCode();
         return await response.Content.ReadFromJsonAsync<Basket>();
@@ -58,5 +58,5 @@ public class BasketServiceClient
 }
 
 public record AddItemDto(string Username, int CatalogItemId, decimal Price, int Quantity = 1);
-public record SetQuantitiesDto(int BasketId, Dictionary<string, int> Quantities);
+public record SetQuantitiesDto(string username, Dictionary<string, int> Quantities);
 public record TransferBasketDto(string AnonymousId, string UserName);

@@ -1,11 +1,14 @@
 ﻿using System.Threading.Tasks;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+using BlazorShared.Interfaces;
+using BlazorShared.Entities;
 using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
 using Microsoft.eShopWeb.ApplicationCore.Interfaces;
 using Microsoft.eShopWeb.ApplicationCore.Services;
 using Microsoft.eShopWeb.ApplicationCore.Specifications;
 using NSubstitute;
 using Xunit;
+using BasketMS.Services;
+using BasketMS.Specifications;
 
 namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Services.BasketServiceTests;
 

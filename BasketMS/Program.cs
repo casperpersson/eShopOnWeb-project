@@ -2,6 +2,7 @@ using BlazorShared.Entities;
 using BasketMS.Interfaces;
 using BasketMS.Repository;
 using BasketMS.Services;
+using BasketMS.Redis;
 
 namespace BasketMS
 {
@@ -18,9 +19,15 @@ namespace BasketMS
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             //builder.Services.AddScoped<IAppLogger<BasketService>, AppLogger<BasketService>>();
-            builder.Services.AddScoped<IRepository<Basket>, BasketRepository>();
+            builder.Services.AddScoped<BasketRepository>();
             builder.Services.AddScoped<IBasketService, BasketService>();
-            
+            builder.Services.AddScoped<RedisCache>();
+            builder.Services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = builder.Configuration.GetConnectionString("RedisConn");
+                //options.InstanceName = "Basket_";
+            });
+
 
             var app = builder.Build();
 
