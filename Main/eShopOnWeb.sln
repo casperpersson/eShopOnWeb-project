@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCatalogMS", "..\Prod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasketMS", "..\BasketMS\BasketMS.csproj", "{9CDE77DD-387C-465C-B39B-0063B2E85164}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockControleSimulator", "..\LagerStyringSimulator\StockControleSimulator.csproj", "{15C82A11-D147-477D-ABD1-256CE0D5CCE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +105,10 @@ Global
 		{9CDE77DD-387C-465C-B39B-0063B2E85164}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CDE77DD-387C-465C-B39B-0063B2E85164}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CDE77DD-387C-465C-B39B-0063B2E85164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15C82A11-D147-477D-ABD1-256CE0D5CCE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15C82A11-D147-477D-ABD1-256CE0D5CCE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15C82A11-D147-477D-ABD1-256CE0D5CCE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15C82A11-D147-477D-ABD1-256CE0D5CCE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
