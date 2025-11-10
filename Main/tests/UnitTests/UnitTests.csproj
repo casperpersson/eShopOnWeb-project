@@ -21,7 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\BasketMS\BasketMS.csproj" />
+    <ProjectReference Include="..\..\..\ProductCatalogMS\ProductCatalogMS.csproj" />
     <ProjectReference Include="..\..\src\ApplicationCore\ApplicationCore.csproj" />
+    <ProjectReference Include="..\..\src\BlazorShared\BlazorShared.csproj" />
     <ProjectReference Include="..\..\src\Web\Web.csproj" />
   </ItemGroup>
 

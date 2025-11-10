@@ -1,5 +1,6 @@
 ﻿using Ardalis.Specification.EntityFrameworkCore;
 using Microsoft.eShopWeb.ApplicationCore.Interfaces;
+using BlazorShared.Interfaces;
 
 namespace Microsoft.eShopWeb.Infrastructure.Data;
 

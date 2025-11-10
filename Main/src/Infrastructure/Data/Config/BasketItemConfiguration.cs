@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+using BlazorShared.Interfaces;
+using BlazorShared.Entities;
 
 namespace Microsoft.eShopWeb.Infrastructure.Data.Config;
 
