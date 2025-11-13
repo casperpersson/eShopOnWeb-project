@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Specifications;
+using BasketMS.Specifications;
+using BlazorShared.Entities;
 using NSubstitute;
 using Xunit;
 
