@@ -25,7 +25,7 @@ public class CatalogServiceClient
 
         try
         {
-            var response = await _httpClient.GetAsync("api/catalogitem");
+            var response = await _httpClient.GetAsync("CatalogItem");
             response.EnsureSuccessStatusCode();
 
             var json = await response.Content.ReadAsStringAsync();
@@ -49,7 +49,7 @@ public class CatalogServiceClient
 
         try
         {
-            var response = await _httpClient.GetAsync($"api/catalogitem/{id}");
+            var response = await _httpClient.GetAsync($"CatalogItem/{id}");
             if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
                 return null;
 
@@ -76,7 +76,7 @@ public class CatalogServiceClient
 
         try
         {
-            var response = await _httpClient.GetAsync("api/catalogbrand");
+            var response = await _httpClient.GetAsync("CatalogBrand");
             response.EnsureSuccessStatusCode();
 
             var json = await response.Content.ReadAsStringAsync();
@@ -100,7 +100,7 @@ public class CatalogServiceClient
 
         try
         {
-            var response = await _httpClient.GetAsync("api/catalogtype");
+            var response = await _httpClient.GetAsync("CatalogType");
             response.EnsureSuccessStatusCode();
 
             var json = await response.Content.ReadAsStringAsync();
@@ -133,7 +133,7 @@ public class CatalogServiceClient
             var json = JsonSerializer.Serialize(request);
             var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
 
-            var response = await _httpClient.PutAsync($"api/catalogitem/{id}/details", content);
+            var response = await _httpClient.PutAsync($"CatalogItem/{id}/details", content);
             response.EnsureSuccessStatusCode();
         }
         catch (Exception ex)
@@ -162,7 +162,7 @@ public class CatalogServiceClient
             var json = JsonSerializer.Serialize(request);
             var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
 
-            var response = await _httpClient.PostAsync("api/catalogitem", content);
+            var response = await _httpClient.PostAsync("CatalogItem", content);
             response.EnsureSuccessStatusCode();
 
             var responseJson = await response.Content.ReadAsStringAsync();
@@ -203,7 +203,7 @@ public class CatalogServiceClient
 
         try
         {
-            var response = await _httpClient.DeleteAsync($"api/catalogitem/{id}");
+            var response = await _httpClient.DeleteAsync($"CatalogItem/{id}");
 
             if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
                 return false;
@@ -228,7 +228,7 @@ public class CatalogServiceClient
             var json = JsonSerializer.Serialize(request);
             var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
 
-            var response = await _httpClient.PutAsync($"api/catalogitem/{id}/brand", content);
+            var response = await _httpClient.PutAsync($"CatalogItem/{id}/brand", content);
             response.EnsureSuccessStatusCode();
         }
         catch (Exception ex)
@@ -248,7 +248,7 @@ public class CatalogServiceClient
             var json = JsonSerializer.Serialize(request);
             var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
 
-            var response = await _httpClient.PutAsync($"api/catalogitem/{id}/type", content);
+            var response = await _httpClient.PutAsync($"CatalogItem/{id}/type", content);
             response.EnsureSuccessStatusCode();
         }
         catch (Exception ex)
