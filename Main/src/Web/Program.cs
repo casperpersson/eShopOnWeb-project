@@ -48,12 +48,12 @@ builder.Services.AddCookieSettings();
 builder.Services.AddHttpClient<CatalogServiceClient>(client =>
 {
     // Update this URL to match your microservice deployment
-    client.BaseAddress = new Uri(builder.Configuration["CatalogMicroserviceUrl"] ?? "https://localhost:7001/");
+    client.BaseAddress = new Uri(builder.Configuration["CatalogMicroserviceUrl"] ?? "https://localhost:7010/gateway/");
     client.Timeout = TimeSpan.FromSeconds(30);
 });
 builder.Services.AddHttpClient<BasketServiceClient>(client =>
 {
-    client.BaseAddress = new Uri(builder.Configuration["BasketMicroserviceUrl"] ?? "https://localhost:7081/");
+    client.BaseAddress = new Uri(builder.Configuration["BasketMicroserviceUrl"] ?? "https://localhost:7010/gateway/basket/");
     client.Timeout = TimeSpan.FromSeconds(30);
 });
 builder.Services.AddScoped<ICatalogViewModelService, MicroserviceCatalogViewModelService>();

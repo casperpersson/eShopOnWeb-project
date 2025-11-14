@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasketMS", "..\BasketMS\Bas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockControleSimulator", "..\LagerStyringSimulator\StockControleSimulator.csproj", "{15C82A11-D147-477D-ABD1-256CE0D5CCE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotApiGateway", "..\Ocelot1\OcelotApiGateway.csproj", "{0922B507-F5D7-4F2B-8296-899E88EC621E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +111,10 @@ Global
 		{15C82A11-D147-477D-ABD1-256CE0D5CCE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15C82A11-D147-477D-ABD1-256CE0D5CCE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15C82A11-D147-477D-ABD1-256CE0D5CCE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0922B507-F5D7-4F2B-8296-899E88EC621E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0922B507-F5D7-4F2B-8296-899E88EC621E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0922B507-F5D7-4F2B-8296-899E88EC621E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0922B507-F5D7-4F2B-8296-899E88EC621E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
