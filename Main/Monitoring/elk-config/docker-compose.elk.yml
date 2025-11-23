@@ -36,6 +36,11 @@ services:
       - "5601:5601"
     environment:
       ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+      # Disable Fleet/Package Registry
+      XPACK_FLEET_ENABLED: "false"
+      XPACK_FLEET_REGISTRYURL: ""
+    volumes:
+      - ./elk-config/kibana.yml:/usr/share/kibana/config/kibana.yml:ro
     depends_on:
       - elasticsearch
     networks:
@@ -47,3 +52,4 @@ volumes:
 networks:
   elk:
     driver: bridge
+

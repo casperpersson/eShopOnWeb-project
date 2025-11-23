@@ -1,11 +1,8 @@
 server.host: "0.0.0.0"
 elasticsearch.hosts: ["http://elasticsearch:9200"]
 
-# Disable package registry for local development
+# Disable Fleet if you don't use Elastic Agent integrations
 xpack.fleet.enabled: false
-xpack.fleet.registryUrl: ""
 
-# Optional: Disable other cloud features you don't need
-xpack.cloud.id: ""
-xpack.monitoring.ui.container.elasticsearch.enabled: true
-
+# REMOVE or comment out the following line if present:
+# xpack.fleet.registryUrl: ""
