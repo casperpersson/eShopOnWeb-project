@@ -1,0 +1,11 @@
+server.host: "0.0.0.0"
+elasticsearch.hosts: ["http://elasticsearch:9200"]
+
+# Disable package registry for local development
+xpack.fleet.enabled: false
+xpack.fleet.registryUrl: ""
+
+# Optional: Disable other cloud features you don't need
+xpack.cloud.id: ""
+xpack.monitoring.ui.container.elasticsearch.enabled: true
+

@@ -1,4 +1,5 @@
-﻿using System.Net.Mime;
+﻿using System.Diagnostics;
+using System.Net.Mime;
 using Ardalis.ListStartupServices;
 using Azure.Identity;
 using BlazorAdmin;
@@ -20,9 +21,32 @@ using Microsoft.eShopWeb.Web.Configuration;
 using Microsoft.eShopWeb.Web.HealthChecks;
 using Microsoft.eShopWeb.Web.Services;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Serilog;
+using Serilog.Events;
+using Microsoft.eShopWeb.Web.Middleware;
+
+
+
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+    .MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Warning)
+    .Enrich.FromLogContext()
+    .Enrich.WithEnvironmentName()
+    .Enrich.WithMachineName()
+    .Enrich.WithProcessId()
+    .Enrich.WithThreadId()
+    .WriteTo.Console()
+    .WriteTo.Elasticsearch(new Serilog.Sinks.Elasticsearch.ElasticsearchSinkOptions(new Uri("http://localhost:9200"))
+    {
+        IndexFormat = "eshopweb-logs-{0:yyyy.MM.dd}",
+        AutoRegisterTemplate = true,
+        AutoRegisterTemplateVersion = Serilog.Sinks.Elasticsearch.AutoRegisterTemplateVersion.ESv7
+    })
+    .CreateLogger();
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Logging.AddConsole();
+builder.Host.UseSerilog();
 
 if (builder.Environment.IsDevelopment() || builder.Environment.EnvironmentName == "Docker"){
     // Configure SQL Server (local)
@@ -44,6 +68,7 @@ else{
     });
 }
 
+builder.Services.AddScoped<IPerformanceMetricsService, PerformanceMetricsService>();
 builder.Services.AddCookieSettings();
 builder.Services.AddHttpClient<CatalogServiceClient>(client =>
 {
@@ -129,6 +154,8 @@ builder.Services.AddBlazorServices();
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 var app = builder.Build();
+
+app.UseMiddleware<PerformanceLoggingMiddleware>();
 
 app.Logger.LogInformation("App created...");
 
