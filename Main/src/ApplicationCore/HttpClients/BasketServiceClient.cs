@@ -15,7 +15,7 @@ public class BasketServiceClient
 
     public async Task<Basket?> GetOrCreateBasketForUserAsync(string userName)
     {
-        var response = await _httpClient.GetAsync($"api/basket/user/{userName}");
+        var response = await _httpClient.GetAsync($"user/{userName}");
         response.EnsureSuccessStatusCode();
         return await response.Content.ReadFromJsonAsync<Basket>();
     }
@@ -23,7 +23,7 @@ public class BasketServiceClient
     public async Task<Basket> AddItemToBasketAsync(string username, int catalogItemId, decimal price, int quantity = 1)
     {
         var dto = new AddItemDto(username, catalogItemId, price, quantity);
-        var response = await _httpClient.PostAsJsonAsync("api/basket/add-item", dto);
+        var response = await _httpClient.PostAsJsonAsync("add-item", dto);
         response.EnsureSuccessStatusCode();
         return await response.Content.ReadFromJsonAsync<Basket>();
     }
@@ -31,27 +31,27 @@ public class BasketServiceClient
     public async Task<Basket> SetQuantitiesAsync(string username, Dictionary<string, int> quantities)
     {
         var dto = new SetQuantitiesDto(username, quantities);
-        var response = await _httpClient.PostAsJsonAsync("api/basket/set-quantities", dto);
+        var response = await _httpClient.PostAsJsonAsync("set-quantities", dto);
         response.EnsureSuccessStatusCode();
         return await response.Content.ReadFromJsonAsync<Basket>();
     }
 
     public async Task DeleteBasketAsync(int basketId)
     {
-        var response = await _httpClient.DeleteAsync($"api/basket/{basketId}");
+        var response = await _httpClient.DeleteAsync($"{basketId}");
         response.EnsureSuccessStatusCode();
     }
 
     public async Task TransferBasketAsync(string anonymousId, string userName)
     {
         var dto = new TransferBasketDto(anonymousId, userName);
-        var response = await _httpClient.PostAsJsonAsync("api/basket/transfer", dto);
+        var response = await _httpClient.PostAsJsonAsync("transfer", dto);
         response.EnsureSuccessStatusCode();
     }
 
     public async Task<int> CountTotalBasketItemsAsync(string username)
     {
-        var response = await _httpClient.GetAsync($"api/basket/{username}/item-count");
+        var response = await _httpClient.GetAsync($"{username}/item-count");
         response.EnsureSuccessStatusCode();
         return await response.Content.ReadFromJsonAsync<int>();
     }

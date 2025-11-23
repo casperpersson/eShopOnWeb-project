@@ -1,4 +1,4 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+﻿using BlazorShared.Entities;
 using NSubstitute;
 
 namespace Microsoft.eShopWeb.UnitTests.Builders;
