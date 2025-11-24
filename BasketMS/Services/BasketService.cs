@@ -6,6 +6,7 @@ using BlazorShared.Entities;
 using BasketMS.Interfaces;
 using BasketMS.Specifications;
 using BasketMS.Repository;
+using BasketMS.RabbitMQ;
 
 namespace BasketMS.Services;
 
@@ -35,6 +36,7 @@ public class BasketService : IBasketService
     {
         var basketSpec = new BasketWithItemsSpecification(username);
         var basket = await _basketRepository.FirstOrDefaultAsync(basketSpec);
+        var mq = new Sender();
 
         if (basket == null)
         {
@@ -43,7 +45,8 @@ public class BasketService : IBasketService
         }
 
         basket.AddItem(catalogItemId, price, quantity);
-
+        
+        await mq.SendMessage(catalogItemId, quantity, basket.Id);
         await _basketRepository.UpdateAsync(basket);
         return basket;
     }
@@ -62,6 +65,7 @@ public class BasketService : IBasketService
             }
         }
         basket.RemoveEmptyItems();
+
         await _basketRepository.UpdateAsync(basket);
         return basket;
     }
