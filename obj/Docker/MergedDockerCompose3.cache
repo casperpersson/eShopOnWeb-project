@@ -1,0 +1,91 @@
+name: dockercompose725870660194950805
+services:
+  eshoppublicapi:
+    build:
+      context: C:\Users\stamm\Documents\GitHub\eShopOnWeb-project
+      dockerfile: src/PublicApi/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Docker
+      ASPNETCORE_URLS: http://+:8080
+    image: eshoppublicapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "5200"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\stamm\.aspnet\https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\stamm\.microsoft\usersecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+  eshopwebmvc:
+    build:
+      context: C:\Users\stamm\Documents\GitHub\eShopOnWeb-project
+      dockerfile: src/Web/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Docker
+      ASPNETCORE_URLS: http://+:8080
+    image: eshopwebmvc
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "5106"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\stamm\.aspnet\https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\stamm\.microsoft\usersecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+  productcatalogms:
+    build:
+      context: C:\Users\stamm\Documents\GitHub\ProductCatalogMS
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: Server=sqlserver;Database=ProductCatalog;User Id=sa;Password=@someThingComplicated1234;TrustServerCertificate=True;
+    image: productcatalogms
+    networks:
+      default: null
+    volumes:
+      - type: volume
+        source: productcatalog_keys
+        target: /root/.aspnet/DataProtection-Keys
+        volume: {}
+  sqlserver:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: '@someThingComplicated1234'
+    image: mcr.microsoft.com/azure-sql-edge
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+networks:
+  default:
+    name: dockercompose725870660194950805_default
+volumes:
+  productcatalog_keys:
+    name: dockercompose725870660194950805_productcatalog_keys
