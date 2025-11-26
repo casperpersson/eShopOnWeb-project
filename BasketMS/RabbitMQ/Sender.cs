@@ -25,7 +25,12 @@ namespace BasketMS.RabbitMQ
                 Persistent = true,
             };
 
-            await channel.BasicPublishAsync(exchange: string.Empty, routingKey: "stock_queue", mandatory: true, basicProperties: properties, body: body);
+            await channel.BasicPublishAsync(exchange: string.Empty, 
+                routingKey: "stock_queue", 
+                mandatory: true, 
+                basicProperties: properties, 
+                body: body);
+
             Console.WriteLine($"Sent message: {json}");
         }
         record SendDto (int Id, int Quantity, int BasketId);

@@ -19,7 +19,7 @@ namespace BasketMS
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             //builder.Services.AddScoped<IAppLogger<BasketService>, AppLogger<BasketService>>();
-            builder.Services.AddScoped<BasketRepository>();
+            builder.Services.AddScoped<IBasketRepository, BasketRepository>();
             builder.Services.AddScoped<IBasketService, BasketService>();
             builder.Services.AddScoped<RedisCache>();
             builder.Services.AddStackExchangeRedisCache(options =>

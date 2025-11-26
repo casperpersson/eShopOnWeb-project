@@ -11,7 +11,7 @@ using BasketMS.Redis;
 
 namespace BasketMS.Repository;
 
-public class BasketRepository(RedisCache redisCache)
+public class BasketRepository(RedisCache redisCache): IBasketRepository
 {
     private readonly RedisCache _cache = redisCache;
     private readonly ConcurrentDictionary<int, Basket> _baskets = new();

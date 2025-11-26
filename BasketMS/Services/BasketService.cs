@@ -12,9 +12,9 @@ namespace BasketMS.Services;
 
 public class BasketService : IBasketService
 {
-    private readonly BasketRepository _basketRepository;
+    private readonly IBasketRepository _basketRepository;
 
-    public BasketService(BasketRepository basketRepository)
+    public BasketService(IBasketRepository basketRepository)
     {
         _basketRepository = basketRepository;
     }
@@ -32,7 +32,10 @@ public class BasketService : IBasketService
         return basket;
     }
 
-    public async Task<Basket> AddItemToBasketAsync(string username, int catalogItemId, decimal price, int quantity = 1)
+    public async Task<Basket> AddItemToBasketAsync(string username, 
+        int catalogItemId, 
+        decimal price, 
+        int quantity = 1)
     {
         var basketSpec = new BasketWithItemsSpecification(username);
         var basket = await _basketRepository.FirstOrDefaultAsync(basketSpec);
