@@ -1,0 +1,8 @@
+server.host: "0.0.0.0"
+elasticsearch.hosts: ["http://elasticsearch:9200"]
+
+# Disable Fleet if you don't use Elastic Agent integrations
+xpack.fleet.enabled: false
+
+# REMOVE or comment out the following line if present:
+# xpack.fleet.registryUrl: ""
